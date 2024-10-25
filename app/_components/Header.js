@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { GoHome } from "react-icons/go";
 function Header() {
   return (
     <div>
@@ -15,33 +15,18 @@ function Header() {
 
       <div className="hidden md:block">
         <nav aria-label="Global">
-          <ul className="flex items-center gap-6 text-sm">
-            <li>
+          <ul className="flex items-center gap-6 text-md">
+            <li className=''>
+            
               <a
-                className="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
+                className="flex gap-2 items-center text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
                 href="#"
               >
-                About
+                <GoHome className='w-4 h-4' />
+                Home
               </a>
             </li>
-
-            <li>
-              <a
-                className="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
-                href="#"
-              >
-                Careers
-              </a>
-            </li>
-
-            <li>
-              <a
-                className="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
-                href="#"
-              >
-                History
-              </a>
-            </li>
+           
 
             <li>
               <a
@@ -51,22 +36,20 @@ function Header() {
                 Services
               </a>
             </li>
-
             <li>
               <a
                 className="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
                 href="#"
               >
-                Projects
+                Docs
               </a>
             </li>
-
             <li>
               <a
                 className="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
                 href="#"
               >
-                Blog
+                About
               </a>
             </li>
           </ul>
@@ -76,7 +59,7 @@ function Header() {
       <div className="flex items-center gap-4">
         <div className="sm:flex sm:gap-4">
           <a
-            className="rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white shadow dark:hover:bg-teal-500"
+            className="rounded-md bg-green-700 px-5 py-2.5 text-sm font-medium text-white shadow dark:hover:bg-green-600"
             href="#"
           >
             Login
