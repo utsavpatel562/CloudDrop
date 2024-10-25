@@ -1,5 +1,10 @@
 import React from 'react'
 import { GoHome } from "react-icons/go";
+import { PiCodesandboxLogoFill } from "react-icons/pi";
+import { CgFileDocument } from "react-icons/cg";
+import { RiServiceLine } from "react-icons/ri";
+import { TbLogin2 } from "react-icons/tb";
+import { LuUserPlus2 } from "react-icons/lu";
 function Header() {
   return (
     <div>
@@ -9,15 +14,14 @@ function Header() {
       <div className="md:flex md:items-center md:gap-12">
         <a className="block text-teal-600 dark:text-teal-600" href="#">
           <span className="sr-only">Home</span>
-         <img src='/logo2.png' alt='logo2' className='w-[200px] p-1'/>
+         <img src='/logo2.png' alt='logo2' className='w-[200px] p-1 bg-slate-800 rounded-md '/>
         </a>
       </div>
 
       <div className="hidden md:block">
         <nav aria-label="Global">
           <ul className="flex items-center gap-6 text-md">
-            <li className=''>
-            
+            <li>
               <a
                 className="flex gap-2 items-center text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
                 href="#"
@@ -26,29 +30,30 @@ function Header() {
                 Home
               </a>
             </li>
-           
-
             <li>
               <a
-                className="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
+                className="flex gap-2 items-center text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
                 href="#"
               >
+                <RiServiceLine className='w-4 h-4' />
                 Services
               </a>
             </li>
             <li>
               <a
-                className="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
+                className="flex gap-2 items-center text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
                 href="#"
               >
+                <CgFileDocument className='w-4 h-4'/>
                 Docs
               </a>
             </li>
             <li>
               <a
-                className="text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
+                className="flex gap-2 items-center text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
                 href="#"
               >
+                <PiCodesandboxLogoFill className='w-4 h-4'/>
                 About
               </a>
             </li>
@@ -57,20 +62,22 @@ function Header() {
       </div>
 
       <div className="flex items-center gap-4">
-        <div className="sm:flex sm:gap-4">
+        <div className="sm:flex sm:gap-2">
           <a
-            className="rounded-md bg-green-700 px-5 py-2.5 text-sm font-medium text-white shadow dark:hover:bg-green-600"
+            className="flex gap-2 items-center rounded-md bg-green-700 px-5 py-2.5 text-sm font-medium text-white shadow dark:hover:bg-green-600"
             href="#"
           >
             Login
+            <TbLogin2 className='w-4 h-4'/>
           </a>
 
           <div className="hidden sm:flex">
             <a
-              className="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-600 dark:bg-gray-800 dark:text-white dark:hover:text-white/75"
+              className="flex gap-2 items-center rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-600 dark:bg-gray-800 dark:text-white dark:hover:text-white/75"
               href="#"
             >
               Register
+              <LuUserPlus2 className='w-4 h-4' />
             </a>
           </div>
         </div>
