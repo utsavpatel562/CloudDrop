@@ -14,7 +14,7 @@ function Header() {
       <div className="md:flex md:items-center md:gap-12">
         <a className="block text-teal-600 dark:text-teal-600" href="#">
           <span className="sr-only">Home</span>
-         <img src='/logo2.png' alt='logo2' className='w-[200px] p-1 bg-slate-800 rounded-md '/>
+         <img src='/logo2.png' alt='logo2' className='w-[200px] p-1'/>
         </a>
       </div>
 
