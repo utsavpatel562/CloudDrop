@@ -8,7 +8,7 @@ import { LuUserPlus2 } from "react-icons/lu";
 function Header() {
   return (
     <div>
-      <header className="bg-white dark:bg-gray-900">
+      <header className="bg-white dark:bg-transparent">
   <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
     <div className="flex h-16 items-center justify-between">
       <div className="md:flex md:items-center md:gap-12">
@@ -23,7 +23,7 @@ function Header() {
           <ul className="flex items-center gap-6 text-md">
             <li>
               <a
-                className="flex gap-2 items-center text-gray-500 transition hover:bg-slate-700 rounded-full pt-2 pb-2 pr-3 pl-3 hover:font-semibold dark:text-white"
+                className="flex gap-2 items-center text-gray-500 transition hover:bg-zinc-800 rounded-full pt-2 pb-2 pr-3 pl-3 hover:font-semibold dark:text-white"
                 href="#"
               >
                 <GoHome className='w-4 h-4' />
@@ -32,7 +32,7 @@ function Header() {
             </li>
             <li>
               <a
-                className="flex gap-2 items-center text-gray-500 transition hover:bg-slate-700 rounded-full pt-2 pb-2 pr-3 pl-3 hover:font-semibold dark:text-white"
+                className="flex gap-2 items-center text-gray-500 transition hover:bg-zinc-800 rounded-full pt-2 pb-2 pr-3 pl-3 hover:font-semibold dark:text-white"
                 href="#"
               >
                 <RiServiceLine className='w-4 h-4' />
@@ -41,7 +41,7 @@ function Header() {
             </li>
             <li>
               <a
-               className="flex gap-2 items-center text-gray-500 transition hover:bg-slate-700 rounded-full pt-2 pb-2 pr-3 pl-3 hover:font-semibold dark:text-white"
+               className="flex gap-2 items-center text-gray-500 transition hover:bg-zinc-800 rounded-full pt-2 pb-2 pr-3 pl-3 hover:font-semibold dark:text-white"
                 href="#"
               >
                 <CgFileDocument className='w-4 h-4'/>
@@ -50,7 +50,7 @@ function Header() {
             </li>
             <li>
               <a
-                className="flex gap-2 items-center text-gray-500 transition hover:bg-slate-700 rounded-full pt-2 pb-2 pr-3 pl-3 hover:font-semibold dark:text-white"
+                className="flex gap-2 items-center text-gray-500 transition hover:bg-zinc-800 rounded-full pt-2 pb-2 pr-3 pl-3 hover:font-semibold dark:text-white"
                 href="#"
               >
                 <PiCodesandboxLogoFill className='w-4 h-4'/>
@@ -64,7 +64,7 @@ function Header() {
       <div className="flex items-center gap-4">
         <div className="sm:flex sm:gap-2">
           <a
-            className="flex gap-2 items-center rounded-md bg-green-700 px-5 py-2.5 text-sm font-medium text-white shadow dark:hover:bg-green-600"
+            className="flex gap-2 items-center rounded-md bg-green-600 px-5 py-2.5 text-sm font-medium text-white shadow dark:hover:bg-green-700"
             href="#"
           >
             Login
