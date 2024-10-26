@@ -23,7 +23,7 @@ function Header() {
           <ul className="flex items-center gap-6 text-md">
             <li>
               <a
-                className="flex gap-2 items-center text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
+                className="flex gap-2 items-center text-gray-500 transition hover:bg-slate-700 rounded-full pt-2 pb-2 pr-3 pl-3 hover:font-semibold dark:text-white"
                 href="#"
               >
                 <GoHome className='w-4 h-4' />
@@ -32,7 +32,7 @@ function Header() {
             </li>
             <li>
               <a
-                className="flex gap-2 items-center text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
+                className="flex gap-2 items-center text-gray-500 transition hover:bg-slate-700 rounded-full pt-2 pb-2 pr-3 pl-3 hover:font-semibold dark:text-white"
                 href="#"
               >
                 <RiServiceLine className='w-4 h-4' />
@@ -41,7 +41,7 @@ function Header() {
             </li>
             <li>
               <a
-                className="flex gap-2 items-center text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
+               className="flex gap-2 items-center text-gray-500 transition hover:bg-slate-700 rounded-full pt-2 pb-2 pr-3 pl-3 hover:font-semibold dark:text-white"
                 href="#"
               >
                 <CgFileDocument className='w-4 h-4'/>
@@ -50,7 +50,7 @@ function Header() {
             </li>
             <li>
               <a
-                className="flex gap-2 items-center text-gray-500 transition hover:text-gray-500/75 dark:text-white dark:hover:text-white/75"
+                className="flex gap-2 items-center text-gray-500 transition hover:bg-slate-700 rounded-full pt-2 pb-2 pr-3 pl-3 hover:font-semibold dark:text-white"
                 href="#"
               >
                 <PiCodesandboxLogoFill className='w-4 h-4'/>
