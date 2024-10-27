@@ -4,6 +4,10 @@ import { FaReact } from "react-icons/fa";
 import { IoLogoFirebase } from "react-icons/io5";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiClerk } from "react-icons/si";
+import { RiLockPasswordLine } from "react-icons/ri";
+import { SiFusionauth } from "react-icons/si";
+import { TbWorldBolt } from "react-icons/tb";
+import { GrLink } from "react-icons/gr";
 
 function HeroSection() {
   return (
@@ -38,29 +42,70 @@ function HeroSection() {
           </div>
 
           <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-5 xl:gap-6">
-            <a href="#" className="group relative flex h-48 items-end overflow-hidden rounded-xl bg-gray-100 shadow-lg md:h-80">
-              <img src="/image6.jpg" loading="lazy" alt="Photo by Minh Pham" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110 rounded-xl" />
-              <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50 rounded-xl"></div>
-              <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">VR</span>
-            </a>
+          <a href="#" className="group relative flex h-48 items-start overflow-hidden rounded-xl bg-gray-100 shadow-lg md:h-80">
+  <img src="/image1.jpg" loading="lazy" alt="Photo by Minh Pham" 
+       className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110 rounded-xl" />
+  <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-gray-800 via-transparent to-transparent opacity-50 rounded-xl"></div>
+  
+  <div className="relative p-4 text-white md:p-10">
+    <div className="flex gap-2 items-center text-sm md:text-lg md:mb-2">
+      <SiFusionauth className="w-5 h-5 md:w-6 md:h-6" />
+      <span className="md:text-2xl">Secure File Upload</span>
+    </div>
+    <p className="text-md text-justify md:text-lg md:mt-2">
+      Upload files with complete peace of mind. CloudDrop ensures each file is securely stored in the cloud with top-tier encryption, keeping your data safe from unauthorized access.
+    </p>
+  </div>
+</a>
 
-            <a href="#" className="group relative flex h-48 items-end overflow-hidden rounded-xl bg-gray-100 shadow-lg md:col-span-2 md:h-80">
-              <img src="/image5.jpg" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110 rounded-xl" />
-              <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50 rounded-xl"></div>
-              <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Tech</span>
-            </a>
+<a href="#" className="group relative flex h-48 items-start overflow-hidden rounded-xl bg-gray-100 shadow-lg md:col-span-2 md:h-80">
+  <img src="/image5.jpg" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110 rounded-xl" />
+  
+  <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-gray-800 via-transparent to-transparent opacity-50 rounded-xl"></div>
+  
+  <div className="relative p-4 text-white md:p-10">
+    <div className="flex items-center gap-2 text-sm md:text-lg md:mb-2">
+      <RiLockPasswordLine className="w-5 h-5 md:w-6 md:h-6" /> {/* Replace SiTech with your desired icon */}
+      <span className="md:text-2xl">Password-Protected Sharing</span>
+    </div>
+    <p className="text-md md:text-lg md:mt-2">
+    Enable password protection on your shared files for an extra layer of security. Only users with the password can access and download, ensuring your files reach the right hands.
+    </p>
+  </div>
+</a>
 
-            <a href="#" className="group relative flex h-48 items-end overflow-hidden rounded-xl bg-gray-100 shadow-lg md:col-span-2 md:h-80">
-              <img src="/image7.jpg" alt="Photo by Martin Sanchez" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110 rounded-xl" />
-              <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50 rounded-xl"></div>
-              <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Dev</span>
-            </a>
 
-            <a href="#" className="group relative flex h-48 items-end overflow-hidden rounded-xl bg-gray-100 shadow-lg md:h-80">
-              <img src="/image1.jpg" loading="lazy" alt="Photo by Lorenzo Herrera" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110 rounded-xl" />
-              <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50 rounded-xl"></div>
-              <span className="relative ml-4 mb-3 inline-block text-sm text-white md:ml-5 md:text-lg">Retro</span>
-            </a>
+<a href="#" className="group relative flex h-48 items-start overflow-hidden rounded-xl bg-gray-100 shadow-lg md:col-span-2 md:h-80">
+  <img src="/image7.jpg" className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110 rounded-xl" />
+  
+  <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-gray-800 via-transparent to-transparent opacity-50 rounded-xl"></div>
+  
+  <div className="relative p-4 text-white md:p-10">
+    <div className="flex items-center gap-2 text-sm md:text-lg md:mb-2">
+      <TbWorldBolt className="w-5 h-5 md:w-6 md:h-6" /> {/* Replace SiTech with your desired icon */}
+      <span className="md:text-2xl">Anywhere, Anytime Access</span>
+    </div>
+    <p className="text-md md:text-lg md:mt-2">
+    Access your files anytime, anywhere. With CloudDrop’s responsive design and cloud storage integration, your files are always just a click away, on any device.
+    </p>
+  </div>
+</a>
+
+<a href="#" className="group relative flex h-48 items-start overflow-hidden rounded-xl bg-gray-100 shadow-lg md:h-80">
+  <img src="/image1.jpg" loading="lazy" alt="Photo by Minh Pham" 
+       className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110 rounded-xl" />
+  <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-gray-800 via-transparent to-transparent opacity-50 rounded-xl"></div>
+  
+  <div className="relative p-4 text-white md:p-10">
+    <div className="flex gap-2 items-center text-sm md:text-lg md:mb-2">
+      <GrLink className="w-5 h-5 md:w-6 md:h-6" />
+      <span className="md:text-2xl">Instant Sharing Links</span>
+    </div>
+    <p className="text-md text-justify md:text-lg md:mt-2">
+    Share files instantly with secure, one-click links. Just upload, generate a unique link, and share it—file sharing has never been easier or more efficient.
+    </p>
+  </div>
+</a>
           </div>
         </div>
       </div>
