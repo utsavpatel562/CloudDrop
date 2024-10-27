@@ -29,7 +29,7 @@ function HeroSection() {
         </div>
       </div>
 
-      <div className="bg-white dark:bg-gray-900 h-full py-6 sm:py-8 lg:py-12 mt-16 lg:rounded-lg">
+      <div className="bg-white dark:bg-zinc-900 h-full py-6 sm:py-8 lg:py-12 mt-16 lg:rounded-lg">
         <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
           <div className="mb-4 flex items-center justify-between gap-8 sm:mb-7 md:mb-7">
             <div className="flex items-center gap-12">
