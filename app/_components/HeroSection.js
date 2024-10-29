@@ -30,7 +30,7 @@ function HeroSection() {
       </div>
 
 <div className='flex gap-3 justify-center my-10'>
-  <button className='bg-blue-600 hover:bg-blue-500 rounded-md text-md p-3 md:w-[140px]'>Get Started</button>
+  <button className='bg-green-700 hover:bg-green-600 rounded-md text-md p-3 md:w-[140px]'>Get Started</button>
   <button className='bg-zinc-900 hover:bg-zinc-800 rounded-md text-md p-3 md:w-[140px]'>Learn More</button>
 </div>
 
@@ -41,7 +41,7 @@ function HeroSection() {
               <h2 className="text-2xl font-bold text-gray-800 lg:text-3xl dark:text-white">What we provide</h2>
             </div>
             <a href="#"
-               className="inline-block rounded-lg border bg-white dark:bg-gray-700 dark:border-none px-4 py-2 text-center text-sm font-semibold text-gray-500 dark:text-gray-200 outline-none ring-indigo-300 transition duration-100 focus-visible:ring hover:bg-green-600 md:px-8 md:py-3 md:text-base">
+               className="inline-block rounded-lg border bg-white dark:bg-zinc-800 dark:border-none px-4 py-2 text-center text-sm font-semibold text-gray-500 dark:text-gray-200 outline-none ring-indigo-300 transition duration-100 focus-visible:ring hover:bg-green-600 md:px-8 md:py-3 md:text-base">
               More
             </a>
           </div>
@@ -57,7 +57,7 @@ function HeroSection() {
       <SiFusionauth className="w-5 h-5 md:w-6 md:h-6" />
       <span className="md:text-2xl">Secure File Upload</span>
     </div>
-    <p className="text-md text-justify md:text-lg md:mt-2">
+    <p className="text-md md:text-justify md:text-lg md:mt-2">
       Upload files with complete peace of mind. CloudDrop ensures each file is securely stored in the cloud with top-tier encryption, keeping your data safe from unauthorized access.
     </p>
   </div>
