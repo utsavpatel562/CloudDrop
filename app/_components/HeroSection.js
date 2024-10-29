@@ -29,6 +29,11 @@ function HeroSection() {
         </div>
       </div>
 
+<div className='flex gap-3 justify-center my-10'>
+  <button className='bg-blue-600 hover:bg-blue-500 rounded-md text-md p-3 md:w-[140px]'>Get Started</button>
+  <button className='bg-zinc-900 hover:bg-zinc-800 rounded-md text-md p-3 md:w-[140px]'>Learn More</button>
+</div>
+
       <div className="bg-white dark:bg-zinc-900 h-full py-6 sm:py-8 lg:py-12 mt-16 lg:rounded-lg">
         <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
           <div className="mb-4 flex items-center justify-between gap-8 sm:mb-7 md:mb-7">
