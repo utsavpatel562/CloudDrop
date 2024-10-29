@@ -5,6 +5,7 @@ import { CgFileDocument } from "react-icons/cg";
 import { RiServiceLine } from "react-icons/ri";
 import { TbLogin2 } from "react-icons/tb";
 import { LuUserPlus2 } from "react-icons/lu";
+import Image from 'next/image';
 function Header() {
   return (
     <div>
@@ -14,7 +15,7 @@ function Header() {
       <div className="md:flex md:items-center md:gap-12">
         <a className="block text-teal-600 dark:text-teal-600" href="#">
           <span className="sr-only">Home</span>
-         <img src='/logo2.png' alt='logo2' className='w-[200px] p-1'/>
+         <Image src='/logo2.png' alt='logo2' className='p-1' width={220} height={20}/>
         </a>
       </div>
 
