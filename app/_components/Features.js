@@ -1,4 +1,6 @@
 import React from 'react'
+import { MdOutlineContentCopy } from "react-icons/md";
+import { IoMdLink } from "react-icons/io";
 
 function Features(){
   return (
@@ -47,6 +49,28 @@ function Features(){
         </div>
       </div>
     </div>
+    <h2 className='text-center mt-10 text-2xl'>Experience the power of CloudDrop</h2>
+
+    <div className='flex items-center m-auto place-content-center'>
+    <code
+    className="my-8 text-sm sm:text-base inline-flex text-left items-center space-x-4 bg-gray-900 text-white rounded-lg p-4 pl-6">
+    <span className="flex items-center gap-4">
+        <span className="shrink-0 text-gray-500">
+            <IoMdLink className='w-5 h-5'/>
+        </span>
+
+        <span className="flex-1">
+            <span>
+                www.clouddrop
+            </span>
+
+            <span className="text-green-600">
+            .vercel.app
+            </span>
+        </span>
+    </span>
+</code>
+</div>
   </div>
 </div>
     </>
