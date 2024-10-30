@@ -3,7 +3,7 @@ import React from 'react'
 function Upload() {
   return (
     <>
-    <div>Dashboard</div>
+    <div>Upload</div>
     </>
   )
 }
