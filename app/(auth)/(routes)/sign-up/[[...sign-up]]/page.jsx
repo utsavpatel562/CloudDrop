@@ -3,10 +3,20 @@ import { SignUp } from "@clerk/nextjs";
 export default function Page() {
   return (
     <>
-      <section className="justify-center place-content-center flex p-10 h-screen bg-slate-100">
-        <div className="flex place-content-center justify-center p-10 bg-gray-900 rounded-lg md:h-fit">
-          <SignUp />
-        </div>
+      <div className="flex justify-between p-5 bg-zinc-900">
+        <Link href={"/"}>
+          <button className="bg-green-600 p-2 pr-5 pl-5 rounded-full">
+            Back to home
+          </button>
+        </Link>
+        <Link href={"/"}>
+          <button className="bg-green-600 p-2 pr-5 pl-5 rounded-full">
+            Register Now
+          </button>
+        </Link>
+      </div>
+      <section className="justify-center place-content-center flex p-10 h-screen bg-slate-950">
+        <SignUp />
       </section>
     </>
   );
