@@ -8,6 +8,7 @@ import { RiLockPasswordLine } from "react-icons/ri";
 import { SiFusionauth } from "react-icons/si";
 import { TbWorldBolt } from "react-icons/tb";
 import { GrLink } from "react-icons/gr";
+import Link from 'next/link';
 
 function HeroSection() {
   return (
@@ -30,7 +31,7 @@ function HeroSection() {
       </div>
 
 <div className='flex gap-3 justify-center my-10'>
-  <button className='bg-green-700 hover:bg-green-600 rounded-md text-md p-3 md:w-[140px]'>Get Started</button>
+  <Link href={"/files"}><button className='bg-green-700 hover:bg-green-600 rounded-md text-md p-3 md:w-[140px]'>Get Started</button></Link>
   <button className='bg-zinc-900 hover:bg-zinc-800 rounded-md text-md p-3 md:w-[140px]'>Learn More</button>
 </div>
 

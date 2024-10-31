@@ -6,6 +6,7 @@ import { RiServiceLine } from "react-icons/ri";
 import { TbLogin2 } from "react-icons/tb";
 import { LuUserPlus2 } from "react-icons/lu";
 import Image from 'next/image';
+import Link from 'next/link';
 function Header() {
   return (
     <div>
@@ -64,22 +65,16 @@ function Header() {
 
       <div className="flex items-center gap-4">
         <div className="sm:flex sm:gap-2">
-          <a
-            className="flex gap-2 items-center rounded-md bg-green-600 px-5 py-2.5 text-sm font-medium text-white shadow dark:hover:bg-green-700"
-            href="#"
-          >
+          <Link href={"/sign-in"} className='flex gap-2 items-center rounded-md bg-green-600 px-5 py-2.5 text-sm font-medium text-white shadow dark:hover:bg-green-700'>   
             Login
-            <TbLogin2 className='w-4 h-4'/>
-          </a>
+            <TbLogin2 className='w-4 h-4'/>       
+          </Link>
 
           <div className="hidden sm:flex">
-            <a
-              className="flex gap-2 items-center rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-600 dark:bg-gray-800 dark:text-white dark:hover:text-white/75"
-              href="#"
-            >
+            <Link href={"/sign-up"} className="flex gap-2 items-center rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-600 dark:bg-gray-800 dark:text-white dark:hover:text-white/75">
               Register
               <LuUserPlus2 className='w-4 h-4' />
-            </a>
+            </Link>
           </div>
         </div>
 
