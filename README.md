@@ -1,8 +1,8 @@
-# CloudDrop 📁☁️
+# CloudDrop 📁
 
 CloudDrop is a secure, cloud-based file-sharing web application designed to make uploading and sharing files effortless. With CloudDrop, users can securely store files in the cloud, share them via secure links, and even add password protection for an extra layer of security.
 
-## 🌟 Features
+## 🌟 Top Features
 
 - **Secure and Encrypted Storage**: Each file is encrypted, ensuring privacy and data security.
 - **Password-Protected Links**: Share files with confidence using secure links that can be password-protected.
@@ -52,5 +52,4 @@ Open a Pull Request
 ### 📝 License
 Distributed under the MIT License. See LICENSE for more information.
 
-### 💬 Contact
-UTSAV PATEL - @utsavpatel562
+Made with ❤️ by Utsav Patel
