@@ -31,7 +31,7 @@ function HeroSection() {
       </div>
 
 <div className='flex gap-3 justify-center my-10'>
-  <Link href={"/files"}><button className='bg-green-700 hover:bg-green-600 rounded-md text-md p-3 md:w-[140px]'>Get Started</button></Link>
+  <Link href={"/files"}><button className='bg-green-600 hover:bg-green-500 rounded-md text-md p-3 md:w-[140px]'>Get Started</button></Link>
   <button className='bg-zinc-900 hover:bg-zinc-800 rounded-md text-md p-3 md:w-[140px]'>Learn More</button>
 </div>
 

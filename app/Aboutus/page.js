@@ -13,7 +13,7 @@ const page = () => {
         className="h-screen w-full"
         style={{
           background:
-            "linear-gradient(90deg, rgba(238,231,248,1) 0%, rgba(239,239,239,1) 50%, rgba(238,231,248,1) 100%)",
+            "#E4E4E1; background-image: radial-gradient(at top center, rgba(255,255,255,0.03) 0%, rgba(0,0,0,0.03) 100%), linear-gradient(to top, rgba(255,255,255,0.1) 0%, rgba(143,152,157,0.60) 100%); background-blend-mode: normal, multiply",
         }}
       >
         <div className="flex justify-center items-center">
@@ -25,7 +25,7 @@ const page = () => {
                 className="h-52 w-full rounded-xl object-cover shadow-xl transition"
               />
 
-              <div className="p-4">
+              <div className="p-4 bg-zinc-300 my-5 rounded-xl">
                 <a href="#">
                   <h3 className="text-lg font-medium text-gray-900">
                     About Me
@@ -44,21 +44,21 @@ const page = () => {
                   <a
                     target="_blank"
                     href="https://www.instagram.com/utsavpatel_01"
-                    className="cursor-pointer hover:bg-pink-500 hover:text-white p-1 rounded-lg"
+                    className="cursor-pointer text-slate-950 hover:bg-pink-500 hover:text-white p-1 rounded-lg"
                   >
                     <FaInstagram style={{ fontSize: "25px" }} />
                   </a>
                   <a
                     target="_blank"
                     href="https://github.com/utsavpatel562"
-                    className="cursor-pointer hover:bg-slate-900 hover:text-white p-1 rounded-lg"
+                    className="cursor-pointer text-slate-950 hover:bg-slate-900 hover:text-white p-1 rounded-lg"
                   >
                     <FiGithub style={{ fontSize: "25px" }} />
                   </a>
                   <a
                     target="_blank"
                     href="https://www.linkedin.com/in/utsav-patel-coder"
-                    className="cursor-pointer hover:bg-blue-600 hover:text-white p-1 rounded-lg"
+                    className="cursor-pointer text-slate-950 hover:bg-blue-600 hover:text-white p-1 rounded-lg"
                   >
                     <FaLinkedinIn style={{ fontSize: "25px" }} />
                   </a>
