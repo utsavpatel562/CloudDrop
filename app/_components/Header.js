@@ -8,6 +8,9 @@ import { LuUserPlus2 } from "react-icons/lu";
 import Image from 'next/image';
 import Link from 'next/link';
 function Header() {
+  const NaivgateToaboutdeveloper = () => {
+    router.push("/Aboutus/");
+  };
   return (
     <div>
       <header className="bg-white dark:bg-transparent">
@@ -24,13 +27,13 @@ function Header() {
         <nav aria-label="Global">
           <ul className="flex items-center gap-6 text-md">
             <li>
-              <a
+              <Link
                 className="flex gap-2 items-center text-gray-500 transition hover:bg-zinc-800 rounded-full pt-2 pb-2 pr-3 pl-3 hover:font-semibold dark:text-white"
-                href="#"
+                href={"/"}
               >
                 <GoHome className='w-4 h-4' />
                 Home
-              </a>
+              </Link>
             </li>
             <li>
               <a
@@ -53,7 +56,7 @@ function Header() {
             <li>
               <Link
                 className="flex gap-2 items-center text-gray-500 transition hover:bg-zinc-800 rounded-full pt-2 pb-2 pr-3 pl-3 hover:font-semibold dark:text-white"
-                href={"/"}
+                href={"/Aboutus"}
               >
                 <PiCodesandboxLogoFill className='w-4 h-4'/>
                 About
