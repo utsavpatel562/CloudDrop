@@ -51,13 +51,13 @@ function Header() {
               </a>
             </li>
             <li>
-              <a
+              <Link
                 className="flex gap-2 items-center text-gray-500 transition hover:bg-zinc-800 rounded-full pt-2 pb-2 pr-3 pl-3 hover:font-semibold dark:text-white"
-                href="#"
+                href={"/"}
               >
                 <PiCodesandboxLogoFill className='w-4 h-4'/>
                 About
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>
