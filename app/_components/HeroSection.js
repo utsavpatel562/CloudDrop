@@ -1,3 +1,4 @@
+"use client"
 import React from 'react';
 import { RiNextjsFill } from "react-icons/ri";
 import { FaReact } from "react-icons/fa";
@@ -9,8 +10,10 @@ import { SiFusionauth } from "react-icons/si";
 import { TbWorldBolt } from "react-icons/tb";
 import { GrLink } from "react-icons/gr";
 import Link from 'next/link';
+import { useUser } from '@clerk/nextjs';
 
 function HeroSection() {
+  const { isSignedIn } = useUser(); // Get sign-in status
   return (
     <div className='px-4 py-8 md:px-10 md:py-16 lg:py-20'>
       <div className='md:mt-12 lg:mt-20 text-center'>
@@ -31,7 +34,7 @@ function HeroSection() {
       </div>
 
 <div className='flex gap-3 justify-center my-10'>
-  <Link href={"/files"}><button className='bg-green-600 hover:bg-green-500 rounded-md text-md p-3 md:w-[140px]'>Get Started</button></Link>
+  <Link href={"/files"}><button className='bg-green-600 hover:bg-green-500 rounded-md text-md p-3 md:w-[140px]'>{!isSignedIn ? ( "Get Started" ): ("Access Files")}</button></Link>
   <button className='bg-zinc-900 hover:bg-zinc-800 rounded-md text-md p-3 md:w-[140px]'>Learn More</button>
 </div>
 

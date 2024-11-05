@@ -9,10 +9,10 @@ import { LuUserPlus2 } from "react-icons/lu";
 import Image from 'next/image';
 import { MdFolderOpen } from "react-icons/md";
 import Link from 'next/link';
-import { useAuth, UserButton } from '@clerk/nextjs';
+import { UserButton, useUser } from '@clerk/nextjs';
 
 function Header() {
-  const { isSignedIn } = useAuth(); // Get sign-in status
+  const { isSignedIn } = useUser(); // Get sign-in status
 
   return (
     <div>
@@ -20,10 +20,10 @@ function Header() {
         <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
           <div className="flex h-16 items-center justify-between">
             <div className="md:flex md:items-center md:gap-12">
-              <a className="block text-teal-600 dark:text-teal-600" href="#">
+              <Link className="block text-teal-600 dark:text-teal-600" href={"/"}>
                 <span className="sr-only">Home</span>
                 <Image src='/logo2.png' alt='logo2' className='p-1' width={220} height={20} />
-              </a>
+              </Link>
             </div>
 
             <div className="hidden md:block">
@@ -39,22 +39,22 @@ function Header() {
                     </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       className="flex gap-2 items-center text-gray-500 transition hover:bg-zinc-800 rounded-full pt-2 pb-2 pr-3 pl-3 hover:font-semibold dark:text-white"
                       href="#"
                     >
                       <RiServiceLine className='w-4 h-4' />
                       Services
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
+                    <Link
                       className="flex gap-2 items-center text-gray-500 transition hover:bg-zinc-800 rounded-full pt-2 pb-2 pr-3 pl-3 hover:font-semibold dark:text-white"
                       href="#"
                     >
                       <CgFileDocument className='w-4 h-4' />
                       Docs
-                    </a>
+                    </Link>
                   </li>
                   <li>
                     <Link
