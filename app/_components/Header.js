@@ -87,7 +87,7 @@ function Header() {
                   </>
                 ) : (
                   <div className='flex items-center gap-3'>
-                  <Link href={"/files"} className='bg-zinc-800 p-2 pr-4 pl-4 rounded-md flex gap-2 items-center'><MdFolderOpen className='w-4 h-4'/> Go to Files</Link>
+                  <Link href={"/files"} className='bg-zinc-800 p-2 text-sm font-semibold pr-4 pl-4 rounded-full flex gap-2 items-center'><MdFolderOpen className='w-4 h-4'/> Go to Files</Link>
                   <UserButton/>
                   </div>
                 )}
