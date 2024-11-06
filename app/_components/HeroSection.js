@@ -13,7 +13,7 @@ import Link from 'next/link';
 import { useUser } from '@clerk/nextjs';
 
 function HeroSection() {
-  const { isSignedIn } = useUser(); // Get sign-in status
+  const { isSignedIn } = useUser(); // useUser used to check whether the user is logged in or not
   return (
     <div className='px-4 py-8 md:px-10 md:py-16 lg:py-20'>
       <div className='md:mt-12 lg:mt-20 text-center'>
