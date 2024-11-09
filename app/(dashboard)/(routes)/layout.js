@@ -5,10 +5,10 @@ function layout({children}) {
   return (
     <>
     <div>
-    <div className='h-full w-64 flex-col fixed inset-y-0 z-50'>
+    <div className='h-full w-64 flex-col fixed inset-y-0 z-50 bg-zinc-900'>
       <Sidenav/>
     </div>
-    <div className='ml-64'>
+    <div className='ml-72'>
     {children}
     </div>
     </div>
