@@ -2,32 +2,42 @@ import React from 'react'
 import { MdOutlineUploadFile } from "react-icons/md";
 import { LuFileSearch2 } from "react-icons/lu";
 import { TbPremiumRights } from "react-icons/tb";
+import Image from 'next/image';
 
 function Sidenav() {
   // sidenav and  main content
   const menuList = [
     {
       id: 1,
-      name: 'Upload',
-      icon: MdOutlineUploadFile,
-      path: '/upload',
+      name:'Upload',
+      icon:MdOutlineUploadFile,
+      path:'/upload',
     },
     {
       id: 2,
-      name: 'Files',
-      icon: LuFileSearch2,
+      name:'Files',
+      icon:LuFileSearch2,
       path: '/files',
     },
     {
       id: 3,
       name: 'Upgrade',
-      icon: TbPremiumRights,
-      path: '/upgrade',
+      icon:TbPremiumRights,
+      path:'/upgrade',
     },
   ]
   return (
     <>
-    <div>Sidenav</div>
+    <section className=''>
+      <div className='p-5 border-b'>
+        <Image src="/logo2.png" width={"200"} height={"200"}  alt='logo1'/>
+      </div>
+      <div className='flex flex-col float-left'>
+      {menuList.map((item, index)=> (
+        <button><item.icon/><h2>{item.name}</h2></button>
+      ))}
+      </div>
+    </section>
     </>
   )
 }
