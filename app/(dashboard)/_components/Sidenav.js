@@ -1,4 +1,5 @@
-import React from 'react'
+"use client"
+import React, { useState } from 'react'
 import { MdOutlineUploadFile } from "react-icons/md";
 import { LuFileSearch2 } from "react-icons/lu";
 import { TbPremiumRights } from "react-icons/tb";
@@ -35,6 +36,7 @@ function Sidenav() {
     },
     
   ]
+  const [activeIndex, setActiveIndex]=useState(0);
   return (
     <>
     <section>
@@ -43,9 +45,9 @@ function Sidenav() {
       </div>
       <div className='flex flex-col float-left w-full p-2 text-xl'>
       {menuList.map((item, index)=> (
-        <button className='flex gap-2 p-2 items-center rounded-md hover:bg-zinc-300 w-full text-zinc-800'><item.icon/><h2>{item.name}</h2></button>
+        <button className={`flex gap-2 p-2 items-center rounded-md hover:bg-gray-300 w-full text-slate-600`} onClick={()=>setActiveIndex(index)}><item.icon/><h2>{item.name}</h2></button>
       ))}
-      <button className='flex gap-2 p-2 items-center rounded-md hover:bg-zinc-300 w-full text-zinc-800'><MdLogout/> Logout</button>
+      <button className='flex gap-2 p-2 items-center rounded-md hover:bg-gray-300 w-full text-slate-600'><MdLogout/> Logout</button>
       </div>
     </section>
     </>
