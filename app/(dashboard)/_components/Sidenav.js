@@ -45,7 +45,7 @@ function Sidenav() {
       </div>
       <div className='flex flex-col float-left w-full p-2 text-xl'>
       {menuList.map((item, index)=> (
-        <button className={`flex gap-2 p-2 mt-2 items-center rounded-md hover:bg-zinc-800 w-full text-slate-300 ${activeIndex==index?'bg-zinc-800':null}`} onClick={()=>setActiveIndex(index)}><item.icon/><h2>{item.name}</h2></button>
+        <button className={`flex gap-2 p-2 mt-2 items-center rounded-md hover:bg-zinc-800 w-full text-slate-300 ${activeIndex==index?'bg-zinc-700':null}`} onClick={()=>setActiveIndex(index)}><item.icon/><h2>{item.name}</h2></button>
       ))}
       <button className='flex gap-2 p-2 items-center rounded-md mt-2 hover:bg-zinc-800 w-full text-slate-300'><MdLogout/> Logout</button>
       </div>
