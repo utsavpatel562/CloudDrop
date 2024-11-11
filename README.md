@@ -28,6 +28,7 @@ To get a local copy up and running, follow these steps.
 ### Installation
 
 1. Clone the repository:
+   
    ```bash
    git clone https://github.com/utsavpatel562/CloudDrop.git
    cd CloudDrop
