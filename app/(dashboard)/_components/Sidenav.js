@@ -24,8 +24,8 @@ function Sidenav() {
   };
 
   return (
-    <section className="shadow-sm border-r h-full">
-      <div className="p-5 border-b bg-zinc-800">
+    <section className="shadow-sm border-r border-zinc-600 h-full">
+      <div className="p-5 border-b border-zinc-600 bg-zinc-800">
         <Image src="/logo2.png" width={200} height={200} alt="logo1" />
       </div>
       <div className="flex flex-col float-left w-full p-2 text-xl">
