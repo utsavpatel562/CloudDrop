@@ -13,14 +13,19 @@ function Sidenav() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const menuList = [
-    { id: 1, name: 'Upload', icon: MdOutlineUploadFile, path: '/upload' },
     { id: 2, name: 'Files', icon: LuFileSearch2, path: '/files' },
+    { id: 1, name: 'Upload', icon: MdOutlineUploadFile, path: '/upload' },
     { id: 3, name: 'Upgrade', icon: TbPremiumRights, path: '/upgrade' },
     { id: 4, name: 'Settings', icon: MdOutlineSettings, path: '/settings' },
   ];
 
   const handleLogout = () => {
     router.push('/');
+  };
+
+  const handleNavigation = (index, path) => {
+    setActiveIndex(index);
+    router.push(path);
   };
 
   return (
@@ -33,7 +38,7 @@ function Sidenav() {
           <button
             key={item.id}
             className={`flex gap-2 p-2 mt-2 items-center rounded-md hover:bg-zinc-800 w-full text-slate-300 ${activeIndex === index ? 'bg-zinc-700' : ''}`}
-            onClick={() => setActiveIndex(index)}
+            onClick={() => handleNavigation(index, item.path)}
           >
             <item.icon />
             <h2>{item.name}</h2>
