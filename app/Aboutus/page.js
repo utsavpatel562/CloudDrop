@@ -25,41 +25,34 @@ const page = () => {
                 src="/mypic1.jpeg"
                 className="h-52 w-full rounded-xl object-cover shadow-xl transition"
               />
-
-              <div className="p-4 bg-zinc-300 my-5 rounded-xl">
-                <a href="#">
-                  <h3 className="text-lg font-medium text-gray-900">
+              <div className="p-4 bg-zinc-800 my-5 rounded-xl">
+                  <h3 className="text-lg font-medium text-gray-300">
                     About Me
                   </h3>
-                </a>
-
-                <p className="mt-2 text-justify text-sm/relaxed text-gray-700 font-semibold">
-                  I am Utsav Patel, the developer behind CarConnect, a
-                  marketplace platform for car buyers and sellers. Built with
-                  React, Tailwind CSS, Drizzle ORM, and real-time chat powered
-                  by Sendbird, the app features a sleek UI using ShadCN,
-                  Acernity, and Hyper UI. Deployed on Netlify, CarConnect
-                  delivers a fast and responsive user experience.
+                <p className="mt-2 text-justify text-sm/relaxed text-zinc-300 font-semibold">
+                  I'm Utsav Patel, developer of CloudDrop. I developed this project using Next.js, React.js
+                  , Tailwind CSS, and MongoDB. I'm passionate about building scalable and efficient Full Stack
+                  Web Applications.
                 </p>
                 <div className="my-5 flex gap-3 items-center">
                   <a
                     target="_blank"
                     href="https://www.instagram.com/utsavpatel_01"
-                    className="cursor-pointer text-slate-950 hover:bg-pink-500 hover:text-white p-1 rounded-lg"
+                    className="cursor-pointer text-slate-350 hover:bg-pink-500 hover:text-white p-1 rounded-lg"
                   >
                     <FaInstagram style={{ fontSize: "25px" }} />
                   </a>
                   <a
                     target="_blank"
                     href="https://github.com/utsavpatel562"
-                    className="cursor-pointer text-slate-950 hover:bg-slate-900 hover:text-white p-1 rounded-lg"
+                    className="cursor-pointer text-slate-350 hover:bg-slate-900 hover:text-white p-1 rounded-lg"
                   >
                     <FiGithub style={{ fontSize: "25px" }} />
                   </a>
                   <a
                     target="_blank"
                     href="https://www.linkedin.com/in/utsav-patel-coder"
-                    className="cursor-pointer text-slate-950 hover:bg-blue-600 hover:text-white p-1 rounded-lg"
+                    className="cursor-pointer text-slate-350 hover:bg-blue-600 hover:text-white p-1 rounded-lg"
                   >
                     <FaLinkedinIn style={{ fontSize: "25px" }} />
                   </a>
