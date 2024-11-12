@@ -19,17 +19,33 @@ CloudDrop is a secure, cloud-based file-sharing web application designed to make
 
 To get a local copy up and running, follow these steps.
 
-### Prerequisites
+### 1. Prerequisites
 
 - **Node.js** - Download and install [Node.js](https://nodejs.org/).
 - **Firebase Account** - Set up a Firebase project and enable Cloud Storage.
 - **Clerk Account** - Sign up for Clerk to manage user authentication.
 
-### Installation
+### 2. Installation
 
 1. Clone the repository:
+   
    ```bash
    git clone https://github.com/utsavpatel562/CloudDrop.git
+   cd CloudDrop
+   npm install
+
+### 3. Configure Firebase and Clerk:
+Create a .env.local file in the root directory.
+Add your Firebase and Clerk API keys:
+```bash
+NEXT_PUBLIC_FIREBASE_API_KEY=your_firebase_api_key
+NEXT_PUBLIC_CLERK_API_KEY=your_clerk_api_key
+```
+### 4. Run the development server:
+```bash
+npm run dev
+```
+Open http://localhost:3000 to view it in the browser.
 
 ### 🔒 Security
 > CloudDrop uses industry-standard encryption and secure authentication processes to protect your data.
@@ -42,12 +58,6 @@ To get a local copy up and running, follow these steps.
 
 ### 🤝 Contributing
 Contributions, issues, and feature requests are welcome! Feel free to check out the issues page to start contributing.
-
-Fork the Project
-Create your Feature Branch (git checkout -b feature/AmazingFeature)
-Commit your Changes (git commit -m 'Add AmazingFeature')
-Push to the Branch (git push origin feature/AmazingFeature)
-Open a Pull Request
 
 ### 📝 License
 Distributed under the MIT License. See LICENSE for more information.
