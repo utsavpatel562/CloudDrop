@@ -3,6 +3,7 @@
 CloudDrop is a secure, cloud-based file-sharing web application designed to make uploading and sharing files effortless. With CloudDrop, users can securely store files in the cloud, share them via secure links, and even add password protection for an extra layer of security.
 
 <img src="public/s1.png" alt="image1"/>
+<img src="public/s2.png" alt="image1"/>
 
 ## 🌟 Top Features
 
