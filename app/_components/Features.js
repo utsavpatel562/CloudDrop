@@ -2,6 +2,7 @@ import React from 'react'
 import { MdOutlineContentCopy } from "react-icons/md";
 import { IoMdLink } from "react-icons/io";
 
+// Features Section
 function Features(){
   return (
     <>

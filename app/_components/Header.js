@@ -11,6 +11,7 @@ import { MdFolderOpen } from "react-icons/md";
 import Link from 'next/link';
 import { UserButton, useUser } from '@clerk/nextjs';
 
+// Header Section
 function Header() {
   const { isSignedIn } = useUser(); // Get sign-in status
 
