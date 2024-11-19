@@ -1,6 +1,7 @@
 import { SignUp } from "@clerk/nextjs";
 import Link from "next/link";
 
+// Clerk Sign-up
 export default function Page() {
   return (
     <>
