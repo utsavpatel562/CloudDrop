@@ -1,7 +1,9 @@
-import React from 'react'
+"use client"
+import React, { useState } from 'react'
 import { GrUploadOption } from "react-icons/gr";
 import { RiFolderUploadLine } from "react-icons/ri";
 function UploadForm() {
+  const [file, setFile] = useState();
   return (
     <div className='text-center'>
       
@@ -12,10 +14,10 @@ function UploadForm() {
             <p className="mb-2 md:text-lg text-gray-500 dark:text-gray-400"><span className="font-semibold">Click to upload</span> or <strong className='text-green-500'>drag</strong> and <strong className='text-green-500'>drop</strong></p>
             <p className="md:text-md text-gray-500 dark:text-gray-400">Any files (MAX. 800x400px)</p>
         </div>
-        <input id="dropzone-file" type="file" className="hidden" />
+        <input id="dropzone-file" type="file" className="hidden" onChange={(event)=> setFile(event.target.files[0])} />
     </label>
 </div> 
-<button className='flex items-center justify-center m-auto gap-2 p-3 font-bold bg-green-600 text-white w-[30%] rounded-full mt-5 disabled:bg-zinc-800 disabled:text-zinc-800'><GrUploadOption/>Upload</button>
+<button disabled className='flex items-center justify-center m-auto gap-2 p-3 font-bold bg-green-600 text-white w-[30%] rounded-full mt-5 disabled:bg-zinc-900 disabled:text-zinc-700'><GrUploadOption/>Upload</button>
     </div>
   )
 }
