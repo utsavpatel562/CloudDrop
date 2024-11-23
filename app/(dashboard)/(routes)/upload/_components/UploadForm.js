@@ -5,12 +5,15 @@ import { RiFolderUploadLine } from "react-icons/ri";
 import AlertMsg from './AlertMsg';
 function UploadForm() {
   const [file, setFile] = useState();
+  const [errorMsg, setErrorMsg] = useState();
   const onFileSelect = (file)=> {
     console.log(file);
     if(file&&file.size>2000000){
       console.log("The size is greater than 2 MB");
+      setErrorMsg('Maximum 2 MB file size is allowed');
       return;
     }
+    setErrorMsg(null);
     setFile(file);
   }
   return (
@@ -26,7 +29,7 @@ function UploadForm() {
         <input id="dropzone-file" type="file" className="hidden" onChange={(event)=> onFileSelect(event.target.files[0])} />
     </label>
 </div> 
-<AlertMsg/>
+{errorMsg?<AlertMsg/>:null}
 <button disabled={!file} className='flex items-center justify-center m-auto gap-2 p-3 font-bold bg-green-600 text-white w-[30%] rounded-full mt-5 disabled:bg-zinc-900 disabled:text-zinc-700'><GrUploadOption/>Upload</button>
     </div>
   )
