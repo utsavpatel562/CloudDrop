@@ -2,6 +2,7 @@
 import React, { useState } from 'react'
 import { GrUploadOption } from "react-icons/gr";
 import { RiFolderUploadLine } from "react-icons/ri";
+import AlertMsg from './AlertMsg';
 function UploadForm() {
   const [file, setFile] = useState();
   const onFileSelect = (file)=> {
@@ -25,6 +26,7 @@ function UploadForm() {
         <input id="dropzone-file" type="file" className="hidden" onChange={(event)=> onFileSelect(event.target.files[0])} />
     </label>
 </div> 
+<AlertMsg/>
 <button disabled={!file} className='flex items-center justify-center m-auto gap-2 p-3 font-bold bg-green-600 text-white w-[30%] rounded-full mt-5 disabled:bg-zinc-900 disabled:text-zinc-700'><GrUploadOption/>Upload</button>
     </div>
   )
