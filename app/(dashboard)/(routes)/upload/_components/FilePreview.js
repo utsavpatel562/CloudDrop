@@ -12,7 +12,7 @@ function FilePreview({file}) {
         <h2 className='mt-1'>{file?.type} / {(file.size/1024/1024).toFixed(2) + " MB"}</h2>
         </div>
         </div>
-        <IoIosCloseCircleOutline className='md:w-7 md:h-7'/>
+        <IoIosCloseCircleOutline className='md:w-7 md:h-7 cursor-pointer'/>
     </div>
   )
 }
