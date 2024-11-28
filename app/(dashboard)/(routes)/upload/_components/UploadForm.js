@@ -5,7 +5,7 @@ import { RiFolderUploadLine } from "react-icons/ri";
 import AlertMsg from './AlertMsg';
 import FilePreview from './FilePreview';
 import ProgressBar from './ProgressBar';
-function UploadForm({uploadBtnClick}) {
+function UploadForm({uploadBtnClick, progress}) {
   const [file, setFile] = useState();
   const [errorMsg, setErrorMsg] = useState();
   const onFileSelect = (file)=> {
@@ -33,8 +33,8 @@ function UploadForm({uploadBtnClick}) {
 </div> 
 {errorMsg?<AlertMsg/>:null}
 {file?<FilePreview file={file} removeFile={()=>setFile(null)}/>:null}
+{progress>0?<ProgressBar progress={progress}/>:null}
 <button disabled={!file} className='flex items-center justify-center m-auto gap-2 p-3 font-bold bg-green-600 text-white w-[30%] rounded-full mt-5 disabled:bg-zinc-900 disabled:text-zinc-700' onClick={()=>uploadBtnClick(file)}><GrUploadOption/>Upload</button>
-<ProgressBar/>
     </div>
   )
 }
