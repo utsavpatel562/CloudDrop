@@ -44,10 +44,6 @@ function Sidenav() {
             <h2>{item.name}</h2>
           </button>
         ))}
-        <div className="flex items-center gap-2 mt-2 p-2 rounded-md hover:bg-zinc-800 w-full text-slate-300 cursor-pointer">
-          <MdLogout />
-          <SignOutButton signOutCallback={handleLogout}>Logout</SignOutButton>
-        </div>
       </div>
     </section>
   );
