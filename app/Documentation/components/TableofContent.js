@@ -161,7 +161,79 @@ function TableofContent() {
 </div>
 </div>
 <div id='TechnologyUsed'>
-<h2 className='font-extrabold text-xl mt-10'>3. Technology Used</h2>
+<h2 className='font-extrabold text-xl mt-10'>Technology Used</h2>
+<div className="flex gap-4 mt-2">
+    <div draggable="true" role="button" title="Hover chip"
+        className="h-10 px-3 w-full justify-center flex gap-2 items-center rounded-full border border-gray-100 text-gray-700 focus:bg-gray-300 focus:text-blue-900 active:text-yellow-500 active:bg-yellow-50 active:border-yellow-100 disabled:bg-gray-100 disabled:text-gray-400 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-300 dark:active:text-yellow-400">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            className="bi bi-lightning-charge-fill" viewBox="0 0 16 16">
+            <path
+                d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z">
+            </path>
+        </svg>
+        <span className="block text-sm font-medium">Flash</span>
+    </div>
+	<div draggable="true" role="button" title="Hover chip"
+        className="h-10 px-3 w-full justify-center flex gap-2 items-center rounded-full border border-gray-100 text-gray-700 focus:bg-gray-300 focus:text-blue-900 active:text-yellow-500 active:bg-yellow-50 active:border-yellow-100 disabled:bg-gray-100 disabled:text-gray-400 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-300 dark:active:text-yellow-400">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            className="bi bi-lightning-charge-fill" viewBox="0 0 16 16">
+            <path
+                d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z">
+            </path>
+        </svg>
+        <span className="block text-sm font-medium">Flash</span>
+    </div>
+	<div draggable="true" role="button" title="Hover chip"
+        className="h-10 px-3 w-full justify-center flex gap-2 items-center rounded-full border border-gray-100 text-gray-700 focus:bg-gray-300 focus:text-blue-900 active:text-yellow-500 active:bg-yellow-50 active:border-yellow-100 disabled:bg-gray-100 disabled:text-gray-400 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-300 dark:active:text-yellow-400">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            className="bi bi-lightning-charge-fill" viewBox="0 0 16 16">
+            <path
+                d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z">
+            </path>
+        </svg>
+        <span className="block text-sm font-medium">Flash</span>
+    </div>
+	<div draggable="true" role="button" title="Hover chip"
+        className="h-10 px-3 w-full justify-center flex gap-2 items-center rounded-full border border-gray-100 text-gray-700 focus:bg-gray-300 focus:text-blue-900 active:text-yellow-500 active:bg-yellow-50 active:border-yellow-100 disabled:bg-gray-100 disabled:text-gray-400 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-300 dark:active:text-yellow-400">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            className="bi bi-lightning-charge-fill" viewBox="0 0 16 16">
+            <path
+                d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z">
+            </path>
+        </svg>
+        <span className="block text-sm font-medium">Flash</span>
+    </div>
+	<div draggable="true" role="button" title="Hover chip"
+        className="h-10 px-3 w-full justify-center flex gap-2 items-center rounded-full border border-gray-100 text-gray-700 focus:bg-gray-300 focus:text-blue-900 active:text-yellow-500 active:bg-yellow-50 active:border-yellow-100 disabled:bg-gray-100 disabled:text-gray-400 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-300 dark:active:text-yellow-400">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            className="bi bi-lightning-charge-fill" viewBox="0 0 16 16">
+            <path
+                d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z">
+            </path>
+        </svg>
+        <span className="block text-sm font-medium">Flash</span>
+    </div>
+	<div draggable="true" role="button" title="Hover chip"
+        className="h-10 px-3 w-full justify-center flex gap-2 items-center rounded-full border border-gray-100 text-gray-700 focus:bg-gray-300 focus:text-blue-900 active:text-yellow-500 active:bg-yellow-50 active:border-yellow-100 disabled:bg-gray-100 disabled:text-gray-400 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-300 dark:active:text-yellow-400">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            className="bi bi-lightning-charge-fill" viewBox="0 0 16 16">
+            <path
+                d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z">
+            </path>
+        </svg>
+        <span className="block text-sm font-medium">Flash</span>
+    </div>
+	<div draggable="true" role="button" title="Hover chip"
+        className="h-10 px-3 w-full justify-center flex gap-2 items-center rounded-full border border-gray-100 text-gray-700 focus:bg-gray-300 focus:text-blue-900 active:text-yellow-500 active:bg-yellow-50 active:border-yellow-100 disabled:bg-gray-100 disabled:text-gray-400 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-300 dark:active:text-yellow-400">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            className="bi bi-lightning-charge-fill" viewBox="0 0 16 16">
+            <path
+                d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z">
+            </path>
+        </svg>
+        <span className="block text-sm font-medium">Flash</span>
+    </div>
+</div>
 </div>
 <div id='GettingStarted'>
 <h2 className='font-extrabold text-xl mt-10'>4. Getting Started</h2>
