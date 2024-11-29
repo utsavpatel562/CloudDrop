@@ -1,7 +1,9 @@
 import React from 'react'
 import { FaRegFileCode } from "react-icons/fa6";
 import { FaCircleArrowRight } from "react-icons/fa6";
-
+import { MdOutlineFileUpload } from "react-icons/md";
+import { TbFolderShare } from "react-icons/tb";
+import { RiTailwindCssLine } from "react-icons/ri";
 function TableofContent() {
   return (
     <div>
@@ -63,40 +65,28 @@ function TableofContent() {
   </ul>
 </div>
 <div id='Introduction'>
-	<h2 className='font-extrabold text-xl mt-10'>1. Introduction</h2>
-	<p className='mt-1 text-zinc-400'>CloudDrop is a modern file-sharing application enabling seamless 
+	<h2 className='font-extrabold text-xl mt-10'>Introduction</h2>
+	<p className='mt-2 text-zinc-400 bg-zinc-900 p-3 rounded-lg'>CloudDrop is a modern file-sharing application enabling seamless 
 		and secure transfer of files between users. Built for scalability and high availability, it ensures 
 		privacy and efficiency in handling file uploads, downloads, and management. Developed using Next.js, React.js, Tailwind CSS, Firebase, Auth. using Clerk.</p>
 </div>
 <div id='Features'>
-<h2 className='font-extrabold text-xl mt-10'>2. Features</h2>
-<div className="grid grid-cols-1 md:grid-cols-3">
-  <div className="p-8">
+<h2 className='font-extrabold text-xl mt-10'>Features</h2>
+<div className="grid grid-cols-1 md:grid-cols-3 mt-2 gap-3">
+  <div className="p-8 bg-zinc-900 rounded-xl cursor-pointer">
     <div
       className="bg-indigo-100 rounded-full w-16 h-16 flex justify-center items-center text-indigo-500 shadow-2xl"
     >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        className="h-8 w-8"
-        viewBox="0 0 20 20"
-        fill="currentColor"
-      >
-        <path
-          fillRule="evenodd"
-          d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z"
-          clipRule="evenodd"
-        />
-      </svg>
+      <MdOutlineFileUpload className='md:w-8 md:h-8'/>
     </div>
     <h2 className="uppercase mt-6 text-indigo-500 font-medium mb-3">
-      Social conversations
+      File Upload
     </h2>
     <p className="font-light text-sm text-gray-500 mb-3">
-      We get insulted by others, lose trust for those others. We get back
-      stabbed by friends. It becomes harder for us to give others a hand.
+	Securely upload files to the cloud with the power of firebase by Google, terms and conditions apply.
     </p>
     <a className="text-indigo-500 flex items-center hover:text-indigo-600" href="/">
-      More about us icon
+      Learn More
       <svg
         xmlns="http://www.w3.org/2000/svg"
         className="h-5 w-5"
@@ -112,32 +102,20 @@ function TableofContent() {
     </a>
   </div>
 
-  <div className="p-8">
+  <div className="p-8 bg-zinc-900 rounded-xl cursor-pointer">
     <div
       className="bg-green-100 rounded-full w-16 h-16 flex justify-center items-center text-green-500 shadow-2xl"
     >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        className="h-8 w-8"
-        viewBox="0 0 20 20"
-        fill="currentColor"
-      >
-        <path
-          fillRule="evenodd"
-          d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z"
-          clipRule="evenodd"
-        />
-      </svg>
+      <TbFolderShare className='md:w-8 md:h-8'/>
     </div>
     <h2 className="uppercase mt-6 text-green-500 font-medium mb-3">
-      Social conversations
+	File Sharing
     </h2>
     <p className="font-light text-sm text-gray-500 mb-3">
-      We get insulted by others, lose trust for those others. We get back
-      stabbed by friends. It becomes harder for us to give others a hand.
+	Generate shareable links for easy access. Share files with anyone, anywhere, anytime with password protection.
     </p>
     <a className="text-green-500 flex items-center hover:text-green-600" href="/">
-      More about us icon
+      Learn More
       <svg
         xmlns="http://www.w3.org/2000/svg"
         className="h-5 w-5"
@@ -152,32 +130,20 @@ function TableofContent() {
       </svg>
     </a>
   </div>
-  <div className="p-8">
+  <div className="p-8 bg-zinc-900 rounded-xl cursor-pointer">
     <div
       className="bg-red-100 rounded-full w-16 h-16 flex justify-center items-center text-red-500 shadow-2xl"
     >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        className="h-8 w-8"
-        viewBox="0 0 20 20"
-        fill="currentColor"
-      >
-        <path
-          fillRule="evenodd"
-          d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z"
-          clipRule="evenodd"
-        />
-      </svg>
+     <RiTailwindCssLine className='md:w-8 md:h-8'/> 
     </div>
     <h2 className="uppercase mt-6 text-red-500 font-medium mb-3">
-      Social conversations
+	Responsive Design
     </h2>
     <p className="font-light text-sm text-gray-500 mb-3">
-      We get insulted by others, lose trust for those others. We get back
-      stabbed by friends. It becomes harder for us to give others a hand.
+	Fully optimized for mobile and desktop users. Our responsive design ensures a seamless user experience across all devices.
     </p>
     <a className="text-red-500 flex items-center hover:text-red-600" href="/">
-      More about us icon
+      Learn More
       <svg
         xmlns="http://www.w3.org/2000/svg"
         className="h-5 w-5"
