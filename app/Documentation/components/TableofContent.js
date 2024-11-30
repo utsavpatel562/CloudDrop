@@ -4,6 +4,13 @@ import { FaCircleArrowRight } from "react-icons/fa6";
 import { MdOutlineFileUpload } from "react-icons/md";
 import { TbFolderShare } from "react-icons/tb";
 import { RiTailwindCssLine } from "react-icons/ri";
+import { RiNextjsLine } from "react-icons/ri";
+import { FaReact } from "react-icons/fa";
+import { RiFirebaseLine } from "react-icons/ri";
+import { SiClerk } from "react-icons/si";
+import { SiDrizzle } from "react-icons/si";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { IoLogoNodejs } from "react-icons/io";
 function TableofContent() {
   return (
     <div>
@@ -11,7 +18,7 @@ function TableofContent() {
             <h1 className='text-zinc-300 font-semibold md:text-3xl flex items-center gap-2'><FaRegFileCode className='md:w-7 md:h-7'/>Documentation</h1>
             <p className='mt-1'>A robust file-sharing platform designed for efficiency, scalability, and user-friendliness.</p>
 <div className="rounded-lg flex items-center flex-wrap mt-3">
-  <ul className="flex items-center">
+  <ul className="md:flex items-center">
 	<li className="inline-flex items-center">
 	  <a href="#" className="text-zinc-200 hover:text-green-500">
 		<FaCircleArrowRight/>
@@ -162,81 +169,110 @@ function TableofContent() {
 </div>
 <div id='TechnologyUsed'>
 <h2 className='font-extrabold text-xl mt-10'>Technology Used</h2>
-<div className="flex gap-4 mt-2">
+<div className="md:flex gap-4 mt-2">
     <div draggable="true" role="button" title="Hover chip"
-        className="h-10 px-3 w-full justify-center flex gap-2 items-center rounded-full border border-gray-100 text-gray-700 focus:bg-gray-300 focus:text-blue-900 active:text-yellow-500 active:bg-yellow-50 active:border-yellow-100 disabled:bg-gray-100 disabled:text-gray-400 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-300 dark:active:text-yellow-400">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-            className="bi bi-lightning-charge-fill" viewBox="0 0 16 16">
-            <path
-                d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z">
-            </path>
-        </svg>
-        <span className="block text-sm font-medium">Flash</span>
+        className="hover:bg-black h-10 px-3 w-full mt-3 md:mt-2 justify-center flex gap-2 items-center rounded-full border border-zinc-600 text-gray-700 focus:bg-gray-300 focus:text-blue-900 active:text-yellow-500 active:bg-yellow-50  disabled:bg-gray-100 disabled:text-gray-400 dark:bg-zinc-900 dark:text-gray-300 dark:active:text-yellow-400">
+       <RiNextjsLine className='md:w-5 md:h-5'/>
+        <span className="block text-sm font-medium">Next.js</span>
     </div>
 	<div draggable="true" role="button" title="Hover chip"
-        className="h-10 px-3 w-full justify-center flex gap-2 items-center rounded-full border border-gray-100 text-gray-700 focus:bg-gray-300 focus:text-blue-900 active:text-yellow-500 active:bg-yellow-50 active:border-yellow-100 disabled:bg-gray-100 disabled:text-gray-400 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-300 dark:active:text-yellow-400">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-            className="bi bi-lightning-charge-fill" viewBox="0 0 16 16">
-            <path
-                d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z">
-            </path>
-        </svg>
-        <span className="block text-sm font-medium">Flash</span>
+        className="hover:bg-sky-600 h-10 px-3 mt-3 md:mt-2 w-full justify-center flex gap-2 items-center rounded-full border border-zinc-600 text-gray-700 focus:bg-gray-300 focus:text-blue-900 active:text-yellow-500 active:bg-yellow-50  disabled:bg-gray-100 disabled:text-gray-400 dark:bg-zinc-900 dark:text-gray-300 dark:active:text-yellow-400">
+       <FaReact className='md:w-5 md:h-5'/>
+        <span className="block text-sm font-medium">React.js</span>
     </div>
 	<div draggable="true" role="button" title="Hover chip"
-        className="h-10 px-3 w-full justify-center flex gap-2 items-center rounded-full border border-gray-100 text-gray-700 focus:bg-gray-300 focus:text-blue-900 active:text-yellow-500 active:bg-yellow-50 active:border-yellow-100 disabled:bg-gray-100 disabled:text-gray-400 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-300 dark:active:text-yellow-400">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-            className="bi bi-lightning-charge-fill" viewBox="0 0 16 16">
-            <path
-                d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z">
-            </path>
-        </svg>
-        <span className="block text-sm font-medium">Flash</span>
+        className="hover:bg-orange-500 h-10 px-3 mt-3 md:mt-2 w-full justify-center flex gap-2 items-center rounded-full border border-zinc-600 text-gray-700 focus:bg-gray-300 focus:text-blue-900 active:text-yellow-500 active:bg-yellow-50  disabled:bg-gray-100 disabled:text-gray-400 dark:bg-zinc-900 dark:text-gray-300 dark:active:text-yellow-400">
+       <RiFirebaseLine className='md:w-5 md:h-5'/>
+        <span className="block text-sm font-medium">Firebase</span>
     </div>
 	<div draggable="true" role="button" title="Hover chip"
-        className="h-10 px-3 w-full justify-center flex gap-2 items-center rounded-full border border-gray-100 text-gray-700 focus:bg-gray-300 focus:text-blue-900 active:text-yellow-500 active:bg-yellow-50 active:border-yellow-100 disabled:bg-gray-100 disabled:text-gray-400 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-300 dark:active:text-yellow-400">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-            className="bi bi-lightning-charge-fill" viewBox="0 0 16 16">
-            <path
-                d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z">
-            </path>
-        </svg>
-        <span className="block text-sm font-medium">Flash</span>
+        className="hover:bg-green-700 h-10 px-3 mt-3 md:mt-2 w-full justify-center flex gap-2 items-center rounded-full border border-zinc-600 text-gray-700 focus:bg-gray-300 focus:text-blue-900 active:text-yellow-500 active:bg-yellow-50  disabled:bg-gray-100 disabled:text-gray-400 dark:bg-zinc-900 dark:text-gray-300 dark:active:text-yellow-400">
+       <IoLogoNodejs className='md:w-5 md:h-5'/>
+        <span className="block text-sm font-medium">Node.js</span>
     </div>
 	<div draggable="true" role="button" title="Hover chip"
-        className="h-10 px-3 w-full justify-center flex gap-2 items-center rounded-full border border-gray-100 text-gray-700 focus:bg-gray-300 focus:text-blue-900 active:text-yellow-500 active:bg-yellow-50 active:border-yellow-100 disabled:bg-gray-100 disabled:text-gray-400 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-300 dark:active:text-yellow-400">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-            className="bi bi-lightning-charge-fill" viewBox="0 0 16 16">
-            <path
-                d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z">
-            </path>
-        </svg>
-        <span className="block text-sm font-medium">Flash</span>
+        className="hover:bg-purple-600 h-10 px-3 mt-3 md:mt-2 w-full justify-center flex gap-2 items-center rounded-full border border-zinc-600 text-gray-700 focus:bg-gray-300 focus:text-blue-900 active:text-yellow-500 active:bg-yellow-50  disabled:bg-gray-100 disabled:text-gray-400 dark:bg-zinc-900 dark:text-gray-300 dark:active:text-yellow-400">
+       <SiClerk className='md:w-5 md:h-5'/>
+        <span className="block text-sm font-medium">Clerk</span>
     </div>
 	<div draggable="true" role="button" title="Hover chip"
-        className="h-10 px-3 w-full justify-center flex gap-2 items-center rounded-full border border-gray-100 text-gray-700 focus:bg-gray-300 focus:text-blue-900 active:text-yellow-500 active:bg-yellow-50 active:border-yellow-100 disabled:bg-gray-100 disabled:text-gray-400 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-300 dark:active:text-yellow-400">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-            className="bi bi-lightning-charge-fill" viewBox="0 0 16 16">
-            <path
-                d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z">
-            </path>
-        </svg>
-        <span className="block text-sm font-medium">Flash</span>
+        className="hover:bg-cyan-500 h-10 px-3 mt-3 md:mt-2 w-full justify-center flex gap-2 items-center rounded-full border border-zinc-600 text-gray-700 focus:bg-gray-300 focus:text-blue-900 active:text-yellow-500 active:bg-yellow-50  disabled:bg-gray-100 disabled:text-gray-400 dark:bg-zinc-900 dark:text-gray-300 dark:active:text-yellow-400">
+       <RiTailwindCssFill className='md:w-5 md:h-5'/>
+        <span className="block text-sm font-medium">Tailwind CSS</span>
     </div>
 	<div draggable="true" role="button" title="Hover chip"
-        className="h-10 px-3 w-full justify-center flex gap-2 items-center rounded-full border border-gray-100 text-gray-700 focus:bg-gray-300 focus:text-blue-900 active:text-yellow-500 active:bg-yellow-50 active:border-yellow-100 disabled:bg-gray-100 disabled:text-gray-400 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-300 dark:active:text-yellow-400">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-            className="bi bi-lightning-charge-fill" viewBox="0 0 16 16">
-            <path
-                d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z">
-            </path>
-        </svg>
-        <span className="block text-sm font-medium">Flash</span>
+        className="hover:bg-lime-700 h-10 px-3 mt-3 md:mt-2 w-full justify-center flex gap-2 items-center rounded-full border border-zinc-600 text-gray-700 focus:bg-gray-300 focus:text-blue-900 active:text-yellow-500 active:bg-yellow-50  disabled:bg-gray-100 disabled:text-gray-400 dark:bg-zinc-900 dark:text-gray-300 dark:active:text-yellow-400">
+       <SiDrizzle className='md:w-5 md:h-5'/>
+        <span className="block text-sm font-medium">Drizzle ORM</span>
     </div>
 </div>
 </div>
 <div id='GettingStarted'>
 <h2 className='font-extrabold text-xl mt-10'>4. Getting Started</h2>
+<div>
+    <ul className="mt-8 space-y-3 font-medium">
+        <li className="flex items-start lg:col-span-1">
+            <div className="flex-shrink-0">
+                <svg className="w-5 h-5 text-indigo-600" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd"
+                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                        clipRule="evenodd"></path>
+                </svg>
+            </div>
+            <p className="ml-3 leading-5 text-gray-600">
+                Build functional APIs with zero coding.
+            </p>
+        </li>
+        <li className="flex items-start mt-5 lg:col-span-1 lg:mt-0">
+            <div className="flex-shrink-0">
+                <svg className="w-5 h-5 text-indigo-600" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd"
+                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                        clipRule="evenodd"></path>
+                </svg>
+            </div>
+            <p className="ml-3 leading-5 text-gray-600">
+                Resources with permissions.
+            </p>
+        </li>
+        <li className="flex items-start mt-5 lg:col-span-1 lg:mt-0">
+            <div className="flex-shrink-0">
+                <svg className="w-5 h-5 text-indigo-600" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd"
+                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                        clipRule="evenodd"></path>
+                </svg>
+            </div>
+            <p className="ml-3 leading-5 text-gray-600">
+                Built in user authentication.
+            </p>
+        </li>
+        <li className="flex items-start mt-5 lg:col-span-1 lg:mt-0">
+            <div className="flex-shrink-0">
+                <svg className="w-5 h-5 text-indigo-600" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd"
+                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                        clipRule="evenodd"></path>
+                </svg>
+            </div>
+            <p className="ml-3 leading-5 text-gray-600">
+                Easy Integration with existing apps and tools.
+            </p>
+        </li>
+        <li className="flex items-start mt-5 lg:col-span-1 lg:mt-0">
+            <div className="flex-shrink-0">
+                <svg className="w-5 h-5 text-indigo-600" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd"
+                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                        clipRule="evenodd"></path>
+                </svg>
+            </div>
+            <p className="ml-3 leading-5 text-gray-600">
+                Logs for your API calls.
+            </p>
+        </li>
+    </ul>
+</div>
 </div>
 <div id='APIDocumentation'>
 <h2 className='font-extrabold text-xl mt-10'>5. API Documentation</h2>
