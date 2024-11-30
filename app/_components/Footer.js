@@ -1,4 +1,5 @@
 // Footer Section
+import { SignedIn } from '@clerk/nextjs';
 import Link from 'next/link';
 import React from 'react';
 import { FaLinkedin } from "react-icons/fa6";
@@ -47,12 +48,13 @@ function Footer() {
       </li>
 
       <li>
-        <Link
+        {SignedIn? <Link
           className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
-          href="/sign-up"
+          href="/files"
         >
-          Register
-        </Link>
+          My Files
+        </Link> : null}
+        
       </li>
 
       <li>
@@ -109,7 +111,7 @@ function Footer() {
       </li>
       <li>
         <Link
-          href="utsavpatel562@gmail.com"
+          href="mailto:utsavpatel562@gmail.com"
           rel="noreferrer"
           target="_blank"
           className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
