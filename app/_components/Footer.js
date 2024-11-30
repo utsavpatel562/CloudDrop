@@ -67,8 +67,8 @@ function Footer() {
 
     <ul className="mt-12 flex justify-center gap-6 md:gap-8">
       <li>
-        <a
-          href="#"
+        <Link
+          href="https://www.linkedin.com/in/utsav-patel-coder/"
           rel="noreferrer"
           target="_blank"
           className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
@@ -77,12 +77,12 @@ function Footer() {
           <svg className="size-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
            <FaLinkedin/>
           </svg>
-        </a>
+        </Link>
       </li>
 
       <li>
-        <a
-          href="#"
+        <Link
+          href="https://www.instagram.com/utsavpatel_01/"
           rel="noreferrer"
           target="_blank"
           className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
@@ -91,12 +91,12 @@ function Footer() {
           <svg className="size-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
            <FaSquareInstagram/>
           </svg>
-        </a>
+        </Link>
       </li>
 
       <li>
-        <a
-          href="#"
+        <Link
+          href="https://github.com/utsavpatel562"
           rel="noreferrer"
           target="_blank"
           className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
@@ -105,11 +105,11 @@ function Footer() {
           <svg className="size-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
           <FaSquareGithub/>
           </svg>
-        </a>
+        </Link>
       </li>
       <li>
-        <a
-          href="#"
+        <Link
+          href="utsavpatel562@gmail.com"
           rel="noreferrer"
           target="_blank"
           className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
@@ -118,7 +118,7 @@ function Footer() {
           <svg className="size-8" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
           <IoMail/>
           </svg>
-        </a>
+        </Link>
       </li>
     </ul>
   </div>
