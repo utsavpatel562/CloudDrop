@@ -209,69 +209,155 @@ function TableofContent() {
 </div>
 <div id='GettingStarted'>
 <h2 className='font-extrabold text-xl mt-10'>4. Getting Started</h2>
-<div>
-    <ul className="mt-8 space-y-3 font-medium">
+<div className='md:flex gap-10'>
+    <ul className="mt-3 space-y-3 font-medium">
         <li className="flex items-start lg:col-span-1">
             <div className="flex-shrink-0">
-                <svg className="w-5 h-5 text-indigo-600" fill="currentColor" viewBox="0 0 20 20">
+                <svg className="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd"
                         d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                         clipRule="evenodd"></path>
                 </svg>
             </div>
-            <p className="ml-3 leading-5 text-gray-600">
-                Build functional APIs with zero coding.
+            <p className="ml-3 leading-5 text-zinc-400">
+			Node.js (greater or equals v14.x)
             </p>
         </li>
         <li className="flex items-start mt-5 lg:col-span-1 lg:mt-0">
             <div className="flex-shrink-0">
-                <svg className="w-5 h-5 text-indigo-600" fill="currentColor" viewBox="0 0 20 20">
+                <svg className="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd"
                         d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                         clipRule="evenodd"></path>
                 </svg>
             </div>
-            <p className="ml-3 leading-5 text-gray-600">
-                Resources with permissions.
+            <p className="ml-3 leading-5 text-zinc-400">
+			MongoDB installed locally or an Atlas account
             </p>
         </li>
         <li className="flex items-start mt-5 lg:col-span-1 lg:mt-0">
             <div className="flex-shrink-0">
-                <svg className="w-5 h-5 text-indigo-600" fill="currentColor" viewBox="0 0 20 20">
+                <svg className="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd"
                         d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                         clipRule="evenodd"></path>
                 </svg>
             </div>
-            <p className="ml-3 leading-5 text-gray-600">
-                Built in user authentication.
+            <p className="ml-3 leading-5 text-zinc-400">
+			Firebase / AWS credentials
             </p>
         </li>
         <li className="flex items-start mt-5 lg:col-span-1 lg:mt-0">
             <div className="flex-shrink-0">
-                <svg className="w-5 h-5 text-indigo-600" fill="currentColor" viewBox="0 0 20 20">
+                <svg className="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd"
                         d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                         clipRule="evenodd"></path>
                 </svg>
             </div>
-            <p className="ml-3 leading-5 text-gray-600">
-                Easy Integration with existing apps and tools.
-            </p>
-        </li>
-        <li className="flex items-start mt-5 lg:col-span-1 lg:mt-0">
-            <div className="flex-shrink-0">
-                <svg className="w-5 h-5 text-indigo-600" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                        clipRule="evenodd"></path>
-                </svg>
-            </div>
-            <p className="ml-3 leading-5 text-gray-600">
-                Logs for your API calls.
+            <p className="ml-3 leading-5 text-zinc-400">
+			A .env file for environment variables.
             </p>
         </li>
     </ul>
+	<div className='md:flex gap-3 md:w-fit'>
+	<div className='bg-zinc-900 p-3 text-zinc-300 rounded-xl md:mb-3'>
+		<h3 className='text-lg font-semibold'>Installation</h3>
+		<code
+    className="my-2 md:w-fit text-sm sm:text-base inline-flex text-left items-center space-x-4 bg-zinc-800 text-white rounded-lg p-4 pl-6">
+    <span className="flex gap-4">
+        <span className="shrink-0 text-gray-500">
+            $
+        </span>
+
+        <span className="flex-1">
+            <span>
+			git clone https://github.com/utsavpatel562/CloudDrop.git
+            </span>
+<br/>
+            <span className="text-yellow-500">
+			cd CloudDrop
+            </span>
+        </span>
+    </span>
+
+    <svg className="shrink-0 h-5 w-5 transition text-gray-500 group-hover:text-white" xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+        <path d="M8 2a1 1 0 000 2h2a1 1 0 100-2H8z"></path>
+        <path
+            d="M3 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v6h-4.586l1.293-1.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L10.414 13H15v3a2 2 0 01-2 2H5a2 2 0 01-2-2V5zM15 11h2a1 1 0 110 2h-2v-2z">
+        </path>
+    </svg>
+</code>
+<code
+    className="my-2 md:w-fit text-sm sm:text-base inline-flex text-left items-center space-x-4 bg-zinc-800 text-white rounded-lg p-4 pl-6">
+    <span className="flex gap-4">
+        <span className="shrink-0 text-gray-500">
+            $
+        </span>
+
+        <span className="flex-1">
+            <span>
+			npm install # install dependencies
+            </span>
+<br/>
+            <span className="text-yellow-500">
+			npm run dev # start the development server locally
+            </span>
+        </span>
+    </span>
+
+    <svg className="shrink-0 h-5 w-5 transition text-gray-500 group-hover:text-white" xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+        <path d="M8 2a1 1 0 000 2h2a1 1 0 100-2H8z"></path>
+        <path
+            d="M3 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v6h-4.586l1.293-1.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L10.414 13H15v3a2 2 0 01-2 2H5a2 2 0 01-2-2V5zM15 11h2a1 1 0 110 2h-2v-2z">
+        </path>
+    </svg>
+</code>
+	</div>
+		<div className='bg-zinc-900 p-3 text-zinc-300 rounded-xl'>
+		<h3 className='text-lg font-semibold'>Configure the environment variables:</h3>
+		<code
+    className="my-2 text-sm sm:text-base inline-flex text-left items-center space-x-4 bg-zinc-800 text-white rounded-lg p-4 pl-6">
+    <span className="flex gap-4">
+        <span className="shrink-0 text-gray-500">
+            $
+        </span>
+
+        <span className="flex-1">
+            <span>
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY="YOUR_KEY"
+CLERK_SECRET_KEY="YOUR_KEY"
+NEXT_PUBLIC_CLERK_SIGN_IN_URL="YOUR_KEY"
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=""YOUR_KEY""
+NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL="YOUR_KEY"
+NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL="YOUR_KEY"
+NEXT_FIREBASE_API_KEY="YOUR_KEY"
+NEXT_FIREBASE_AUTH_DOMAIN="YOUR_KEY"
+NEXT_FIREBASE_PROJECT_ID="YOUR_KEY"
+NEXT_FIREBASE_STORAGE_BUCKET="YOUR_KEY"
+NEXT_FIREBASE_MESSAGING_SENDER_ID="YOUR_KEY"
+NEXT_FIREBASE_APP_ID="YOUR_KEY"
+NEXT_FIREBASE_MEASUREMENT_ID="YOUR_KEY"
+            </span>
+<br/>
+            <span className="text-yellow-500">
+			cd CloudDrop
+            </span>
+        </span>
+    </span>
+
+    <svg className="shrink-0 h-5 w-5 transition text-gray-500 group-hover:text-white" xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+        <path d="M8 2a1 1 0 000 2h2a1 1 0 100-2H8z"></path>
+        <path
+            d="M3 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v6h-4.586l1.293-1.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L10.414 13H15v3a2 2 0 01-2 2H5a2 2 0 01-2-2V5zM15 11h2a1 1 0 110 2h-2v-2z">
+        </path>
+    </svg>
+</code>
+	</div>
+	</div>
 </div>
 </div>
 <div id='APIDocumentation'>
