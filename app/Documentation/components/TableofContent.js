@@ -11,6 +11,7 @@ import { SiClerk } from "react-icons/si";
 import { SiDrizzle } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { IoLogoNodejs } from "react-icons/io";
+import Footer from '@/app/_components/Footer';
 function TableofContent() {
   return (
     <div>
@@ -53,17 +54,8 @@ function TableofContent() {
 	  <a href="#" className="text-zinc-400 hover:text-green-500">
 		Getting Started
 	  </a>
-
 	  <span className="mx-4 h-auto text-zinc-400 font-medium">/</span>
 	</li>
-    <li className="inline-flex items-center">
-	  <a href="#" className="text-zinc-400 hover:text-green-500">
-		API Documentation
-	  </a>
-
-	  <span className="mx-4 h-auto text-zinc-400 font-medium">/</span>
-	</li>
-
 	<li className="inline-flex items-center">
 	  <a href="#" className="text-zinc-400 hover:text-green-500">
 		Contact
@@ -72,14 +64,14 @@ function TableofContent() {
   </ul>
 </div>
 <div id='Introduction'>
-	<h2 className='font-extrabold text-xl mt-10'>Introduction</h2>
-	<p className='mt-2 text-zinc-400 bg-zinc-900 p-3 rounded-lg'>CloudDrop is a modern file-sharing application enabling seamless 
+	<h2 className='font-extrabold text-xl mt-10'>1. Introduction</h2>
+	<p className='mt-3 text-zinc-400 bg-zinc-900 p-3 rounded-lg'>CloudDrop is a modern file-sharing application enabling seamless 
 		and secure transfer of files between users. Built for scalability and high availability, it ensures 
 		privacy and efficiency in handling file uploads, downloads, and management. Developed using Next.js, React.js, Tailwind CSS, Firebase, Auth. using Clerk.</p>
 </div>
 <div id='Features'>
-<h2 className='font-extrabold text-xl mt-10'>Features</h2>
-<div className="grid grid-cols-1 md:grid-cols-3 mt-2 gap-3">
+<h2 className='font-extrabold text-xl mt-10'>2. Features</h2>
+<div className="grid grid-cols-1 md:grid-cols-3 mt-3 gap-3">
   <div className="p-8 bg-zinc-900 rounded-xl cursor-pointer">
     <div
       className="bg-indigo-100 rounded-full w-16 h-16 flex justify-center items-center text-indigo-500 shadow-2xl"
@@ -168,7 +160,7 @@ function TableofContent() {
 </div>
 </div>
 <div id='TechnologyUsed'>
-<h2 className='font-extrabold text-xl mt-10'>Technology Used</h2>
+<h2 className='font-extrabold text-xl mt-10'>3. Technology Used</h2>
 <div className="md:flex gap-4 mt-2">
     <div draggable="true" role="button" title="Hover chip"
         className="hover:bg-black h-10 px-3 w-full mt-3 md:mt-2 justify-center flex gap-2 items-center rounded-full border border-zinc-600 text-gray-700 focus:bg-gray-300 focus:text-blue-900 active:text-yellow-500 active:bg-yellow-50  disabled:bg-gray-100 disabled:text-gray-400 dark:bg-zinc-900 dark:text-gray-300 dark:active:text-yellow-400">
@@ -208,7 +200,7 @@ function TableofContent() {
 </div>
 </div>
 <div id='GettingStarted'>
-<h2 className='font-extrabold text-xl mt-10'>4. Getting Started</h2>
+<h2 className='font-extrabold text-xl mt-10 mb-3'>4. Getting Started</h2>
 <div className='md:flex gap-10'>
     <ul className="mt-3 space-y-3 font-medium">
         <li className="flex items-start lg:col-span-1">
@@ -360,13 +352,11 @@ NEXT_FIREBASE_MEASUREMENT_ID="YOUR_KEY"
 	</div>
 </div>
 </div>
-<div id='APIDocumentation'>
-<h2 className='font-extrabold text-xl mt-10'>5. API Documentation</h2>
-</div>
 <div id='Contact'>
-<h2 className='font-extrabold text-xl mt-10'>6. Contact</h2>
+<h2 className='text-center text-xl md:mt-14 md:mb-10'>Made with ❤️ Utsav Patel</h2>
 </div>
         </div>
+        <Footer/>
     </div>
   )
 }
