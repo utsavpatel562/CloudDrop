@@ -1,4 +1,5 @@
 // Footer Section
+import Link from 'next/link';
 import React from 'react';
 import { FaLinkedin } from "react-icons/fa6";
 import { FaSquareInstagram } from "react-icons/fa6";
@@ -19,45 +20,45 @@ function Footer() {
 
     <ul className="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:gap-12">
       <li>
-        <a
+        <Link
           className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
-          href="#"
+          href="/Aboutus"
         >
           About
-        </a>
+        </Link>
       </li>
 
       <li>
-        <a
+        <Link
           className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
-          href="#"
+          href="/#myServices"
         >
           Services
-        </a>
+        </Link>
       </li>
 
       <li>
-        <a
+        <Link
           className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
-          href="#"
+          href="/Documentation"
         >
           Documentation
-        </a>
+        </Link>
       </li>
 
       <li>
-        <a
+        <Link
           className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
-          href="#"
+          href="/sign-up"
         >
           Register
-        </a>
+        </Link>
       </li>
 
       <li>
         <a
           className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
-          href="#"
+          href="/Aboutus"
         >
           Contact
         </a>
