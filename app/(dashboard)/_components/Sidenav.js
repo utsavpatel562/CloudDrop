@@ -4,8 +4,10 @@ import { MdOutlineUploadFile } from "react-icons/md";
 import { LuFileSearch2 } from "react-icons/lu";
 import { TbPremiumRights } from "react-icons/tb";
 import { MdOutlineSettings, MdLogout } from "react-icons/md";
+import { MdContactPage } from "react-icons/md";
+import { AiFillGithub } from "react-icons/ai";
 import Image from 'next/image';
-import { SignOutButton } from '@clerk/nextjs';
+import { IoIosApps } from "react-icons/io";
 import { useRouter } from 'next/navigation';
 
 function Sidenav() {
@@ -17,6 +19,9 @@ function Sidenav() {
     { id: 1, name: 'Upload', icon: MdOutlineUploadFile, path: '/upload' },
     { id: 3, name: 'Upgrade', icon: TbPremiumRights, path: '/upgrade' },
     { id: 4, name: 'Settings', icon: MdOutlineSettings, path: '/settings' },
+    { id: 5, name: 'More Apps', icon: IoIosApps, path: '/moreapps' },
+    { id: 6, name: 'Contact Us', icon: MdContactPage, path: '/contact' },
+    { id: 7, name: 'About GitHub', icon: AiFillGithub, path: '/code' },
   ];
 
   const handleLogout = () => {
