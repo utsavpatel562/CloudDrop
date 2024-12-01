@@ -33,8 +33,7 @@ function UploadForm({uploadBtnClick, progress}) {
 </div> 
 {errorMsg?<AlertMsg/>:null}
 {file?<FilePreview file={file} removeFile={()=>setFile(null)}/>:null}
-{progress>0?<ProgressBar progress={progress}/>:null}
-<button disabled={!file} className='flex items-center justify-center m-auto gap-2 p-3 font-bold bg-green-600 text-white w-[30%] rounded-full mt-5 disabled:bg-zinc-900 disabled:text-zinc-700' onClick={()=>uploadBtnClick(file)}><GrUploadOption/>Upload</button>
+{progress>0?<ProgressBar progress={progress}/>:<button disabled={!file} className='flex items-center justify-center m-auto gap-2 p-3 font-bold bg-green-600 text-white w-[30%] rounded-full mt-5 disabled:bg-zinc-900 disabled:text-zinc-700' onClick={()=>uploadBtnClick(file)}><GrUploadOption/>Upload</button>}
     </div>
   )
 }
