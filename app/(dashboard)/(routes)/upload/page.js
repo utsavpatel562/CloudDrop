@@ -1,5 +1,5 @@
 "use client"
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import UploadForm from './_components/UploadForm';
 import { app } from '@/firebaseConfig';
 import { getDownloadURL, getStorage, ref, uploadBytesResumable } from "firebase/storage";
@@ -7,6 +7,7 @@ import { getDownloadURL, getStorage, ref, uploadBytesResumable } from "firebase/
 function Upload() {
   const[progress, setProgress] = useState();
   const storage=getStorage(app)
+  const [uploadCompleted, setUploadCompleted]=useState(false);
   const uploadFile=(file)=> {
     const metadata = {
       contentType: file.type
@@ -26,6 +27,21 @@ function Upload() {
         });
       }, )
   }
+  useEffect(()=> {
+    console.log("Trigger")
+
+    progress==100 && setTimeout(()=> {
+      setUploadCompleted(true);
+    }, 2000)
+  }, [progress==100]);
+
+  useEffect(()=> {
+    uploadCompleted&&
+    setTimeout(()=> {
+      setUploadCompleted(false);
+      window.location.reload();
+    },2000)
+  }, [uploadCompleted==true])
   return (
     <>
     <div className='p-5 px-8 md:px-28'>
