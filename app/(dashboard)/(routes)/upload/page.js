@@ -1,12 +1,17 @@
 "use client"
 import React, { useEffect, useState } from 'react'
 import UploadForm from './_components/UploadForm';
+import { doc, getFirestore, setDoc } from "firebase/firestore";
 import { app } from '@/firebaseConfig';
 import { getDownloadURL, getStorage, ref, uploadBytesResumable } from "firebase/storage";
+import { useUser } from '@clerk/nextjs';
+import { generateRandom } from '@/app/_utils/GenerateRandom';
 
 function Upload() {
+  const {user} = useUser();
   const[progress, setProgress] = useState();
   const storage=getStorage(app)
+  const db = getFirestore(app);
   const [uploadCompleted, setUploadCompleted]=useState(false);
   const uploadFile=(file)=> {
     const metadata = {
@@ -27,6 +32,22 @@ function Upload() {
         });
       }, )
   }
+
+  const saveInfo = async(file, fileUrl) => {
+    const docId = Date.now().toString();
+    // Add a new document in collection "cities"
+    await setDoc(doc(db, "uploadedFiles", docId), {
+      fileName: file.Name,
+      fileSize: file.size,
+      fileType: file.type,
+      fileUrl:fileUrl,
+      userEmail: user.primaryEmailAddress.emailAddress,
+      userName: user.fullName,
+      password: '',
+      shortUrl:process.env.NEXT_PUBLIC_BASE_URL+generateRandom,
+    });
+  }
+
   useEffect(()=> {
     console.log("Trigger")
 
