@@ -46,20 +46,24 @@ function Upload() {
     );
   };  
 
-  const saveInfo = async(file, fileUrl) => {
-    const docId = Date.now().toString();
-    // Add a new document in collection "cities"
-    await setDoc(doc(db, "uploadedFile", docId), {
-      fileName: file?.name,
-      fileSize: file?.size,
-      fileType: file?.type,
-      fileUrl:fileUrl,
-      userEmail: user?.primaryEmailAddress.emailAddress,
-      userName: user?.fullName,
-      password: '',
-      shortUrl:process.env.NEXT_PUBLIC_BASE_URL+generateRandom(),
-    });
-  }
+  const saveInfo = async (file, fileUrl) => {
+    try {
+      const docId = Date.now().toString(); // Use a unique document ID
+      await setDoc(doc(db, "uploadedFile", docId), {
+        fileName: file?.name,
+        fileSize: file?.size,
+        fileType: file?.type,
+        fileUrl: fileUrl,
+        userEmail: user?.primaryEmailAddress?.emailAddress || "Anonymous",
+        userName: user?.fullName || "Anonymous",
+        password: '',
+        shortUrl: `${process.env.NEXT_PUBLIC_BASE_URL}${generateRandom()}`,
+      });
+      console.log("File info saved successfully.");
+    } catch (error) {
+      console.error("Error saving file info:", error);
+    }
+  };  
 
   /*useEffect(()=> {
     console.log("Trigger")
