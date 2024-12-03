@@ -13,42 +13,55 @@ function Upload() {
   const storage=getStorage(app)
   const db = getFirestore(app);
   const [uploadCompleted, setUploadCompleted]=useState(false);
-  const uploadFile=(file)=> {
+  const uploadFile = (file) => {
     const metadata = {
-      contentType: file.type
+      contentType: file.type,
     };
-    const storageRef = ref(storage, 'file-upload/'+file?.name);
-    const uploadTask = uploadBytesResumable(storageRef, file, file.type);
-    uploadTask.on('state_changed',
+    const storageRef = ref(storage, `file-upload/${file?.name}`);
+    const uploadTask = uploadBytesResumable(storageRef, file, metadata);
+  
+    uploadTask.on(
+      'state_changed',
       (snapshot) => {
-        // Get task progress, including the number of bytes uploaded and the total number of bytes to be uploaded
+        // Track progress
         const progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
         console.log('Upload is ' + progress + '% done');
         setProgress(progress);
-
-        // When the download URL is obtained, replace the component if the upload is successful
-        progress==100 && getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
+      },
+      (error) => {
+        // Handle upload errors
+        console.error('Upload failed:', error);
+      },
+      async () => {
+        // Upload completed successfully, now get the download URL
+        try {
+          const downloadURL = await getDownloadURL(uploadTask.snapshot.ref);
           console.log('File available at', downloadURL);
-        });
-      }, )
-  }
+          saveInfo(file, downloadURL);
+          setUploadCompleted(true); // Optional: Add a success state
+        } catch (error) {
+          console.error('Error fetching download URL:', error);
+        }
+      }
+    );
+  };  
 
   const saveInfo = async(file, fileUrl) => {
     const docId = Date.now().toString();
     // Add a new document in collection "cities"
-    await setDoc(doc(db, "uploadedFiles", docId), {
-      fileName: file.Name,
-      fileSize: file.size,
-      fileType: file.type,
+    await setDoc(doc(db, "uploadedFile", docId), {
+      fileName: file?.name,
+      fileSize: file?.size,
+      fileType: file?.type,
       fileUrl:fileUrl,
-      userEmail: user.primaryEmailAddress.emailAddress,
-      userName: user.fullName,
+      userEmail: user?.primaryEmailAddress.emailAddress,
+      userName: user?.fullName,
       password: '',
-      shortUrl:process.env.NEXT_PUBLIC_BASE_URL+generateRandom,
+      shortUrl:process.env.NEXT_PUBLIC_BASE_URL+generateRandom(),
     });
   }
 
-  useEffect(()=> {
+  /*useEffect(()=> {
     console.log("Trigger")
 
     progress==100 && setTimeout(()=> {
@@ -63,6 +76,7 @@ function Upload() {
       window.location.reload();
     },2000)
   }, [uploadCompleted==true])
+  */
   return (
     <>
     <div className='p-5 px-8 md:px-28'>
