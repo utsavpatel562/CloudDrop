@@ -6,7 +6,7 @@ import Header from "../_components/Header";
 import Footer from "../_components/Footer";
 
 const page = () => {
-  // About Us Page
+  // About Us Page (Utsav Patel)
   return (
     <>
       <Header />

@@ -6,7 +6,7 @@ import { app } from '@/firebaseConfig';
 import { getDownloadURL, getStorage, ref, uploadBytesResumable } from "firebase/storage";
 import { useUser } from '@clerk/nextjs';
 import { generateRandom } from '@/app/_utils/GenerateRandom';
-
+// dashboard upload 
 function Upload() {
   const {user} = useUser();
   const[progress, setProgress] = useState();
