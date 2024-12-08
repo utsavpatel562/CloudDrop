@@ -83,7 +83,7 @@ function Upload() {
     setTimeout(()=> {
       setUploadCompleted(false);
       console.log("FileDocId",fileDocId);
-      router.push(`/file-preview/${fileDocId}`);
+      router.push(`/file-preview/`+fileDocId);
     },2000)
   }, [uploadCompleted, fileDocId, router])
   
