@@ -7,6 +7,7 @@ import React, { useEffect, useState } from 'react';
 function FilePreview({ params }) {
   const [fileId, setFileId] = useState(null); // State to store the unwrapped fileId
   const db = getFirestore(app);
+  const [file, setFile] = useState(); // State to store the file object
 
   useEffect(() => {
     const unwrapParams = async () => {
@@ -31,6 +32,7 @@ function FilePreview({ params }) {
 
       if (docSnap.exists()) {
         console.log("Document data", docSnap.data());
+        setFile(docSnap.data());
       } else {
         console.log("No such document");
       }
