@@ -1,23 +1,45 @@
-"use client"
+"use client";
+
 import { app } from '@/firebaseConfig';
-import { doc, getDoc, getFirestore } from 'firebase/firestore'
-import React, { useEffect } from 'react'
+import { doc, getDoc, getFirestore } from 'firebase/firestore';
+import React, { useEffect, useState } from 'react';
 
-function FilePreview({params}) {
+function FilePreview({ params }) {
+  const [fileId, setFileId] = useState(null); // State to store the unwrapped fileId
   const db = getFirestore(app);
-  useEffect(()=> {
-    console.log(params?.fileDocId)
-  }, [])
 
- // To Get the file from the Firestore
- const getFileInfo = async() => {
-  const docRef = doc(db, "uploadedFile", params?.fileDocId);
-  const docSnap = await getDoc(docRef)
- }
+  useEffect(() => {
+    const unwrapParams = async () => {
+      const resolvedParams = await params; // Unwrap the Promise
+      setFileId(resolvedParams.fileId);
+    };
 
-  return (
-    <div>FilePreview</div>
-  )
+    unwrapParams();
+  }, [params]);
+
+  useEffect(() => {
+    if (fileId) {
+      getFileInfo();
+    }
+  }, [fileId]);
+
+  // To Get the file from the Firestore
+  const getFileInfo = async () => {
+    try {
+      const docRef = doc(db, "uploadedFile", fileId);
+      const docSnap = await getDoc(docRef);
+
+      if (docSnap.exists()) {
+        console.log("Document data", docSnap.data());
+      } else {
+        console.log("No such document");
+      }
+    } catch (error) {
+      console.error("Error fetching document:", error);
+    }
+  };
+
+  return <div>FilePreview</div>;
 }
 
-export default FilePreview
+export default FilePreview;
