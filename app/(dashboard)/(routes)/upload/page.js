@@ -6,12 +6,15 @@ import { app } from '@/firebaseConfig';
 import { getDownloadURL, getStorage, ref, uploadBytesResumable } from "firebase/storage";
 import { useUser } from '@clerk/nextjs';
 import { generateRandom } from '@/app/_utils/GenerateRandom';
+import { useRouter } from 'next/navigation';
 // dashboard upload 
 function Upload() {
   const {user} = useUser();
   const[progress, setProgress] = useState();
+  const router = useRouter();
   const storage=getStorage(app)
   const db = getFirestore(app);
+  const [fileDocId, setFileDocId] = useState();
   const [uploadCompleted, setUploadCompleted]=useState(false);
   const uploadFile = (file) => {
     const metadata = {
@@ -60,13 +63,14 @@ function Upload() {
         id: docId,
         shortUrl: process.env.NEXT_PUBLIC_BASE_URL+docId,
       });
+      setFileDocId(docId);
       console.log("File info saved successfully.");
     } catch (error) {
       console.error("Error saving file info:", error);
     }
   };  
 
-  /*useEffect(()=> {
+  useEffect(()=> {
     console.log("Trigger")
 
     progress==100 && setTimeout(()=> {
@@ -78,10 +82,11 @@ function Upload() {
     uploadCompleted&&
     setTimeout(()=> {
       setUploadCompleted(false);
-      window.location.reload();
+      console.log("FileDocId",fileDocId);
+      router.push(`/file-preview/${fileDocId}`);
     },2000)
-  }, [uploadCompleted==true])
-  */
+  }, [uploadCompleted, fileDocId, router])
+  
   return (
     <>
     <div className='p-5 px-8 md:px-28'>
