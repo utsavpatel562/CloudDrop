@@ -1,5 +1,5 @@
+import Link from 'next/link';
 import React from 'react';
-
 function MyProject() {
   return (
     <div className="my-5 px-4">
@@ -22,6 +22,7 @@ function MyProject() {
           <p className="mt-2 text-justify text-gray-300">
             Full Stack AI Mock Interview App project! A powerful AI-driven mock interview application using modern technologies.
           </p>
+          <Link href={"https://career-boost-ai.vercel.app/"}><button className='bg-green-600 p-2 mt-5 rounded-md'>View project</button></Link>
         </div>
 
         {/* Zoom Clone */}
@@ -42,6 +43,7 @@ function MyProject() {
           <p className="mt-2 text-justify text-gray-300">
           A feature-rich Zoom clone built with modern tech stack such as TypeScript, Next.js, Tailwind CSS, GetStream, Clerk and etc.
           </p>
+          <Link href={"https://zoom-clone-iota-six.vercel.app/"}><button className='bg-green-600 p-2 mt-5 rounded-md'>View project</button></Link>
         </div>
 
         {/* CarConnect */}
@@ -62,6 +64,7 @@ function MyProject() {
           <p className="mt-2 text-justify text-gray-300">
           This full-stack application is designed with performance, scalability, and user engagement in mind. It leverages a modern tech stack.
           </p>
+          <Link href={"https://car-connect-marketplace.netlify.app/"}><button className='bg-green-600 p-2 mt-5 rounded-md'>View project</button></Link>
         </div>
       </div>
     </div>
