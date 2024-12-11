@@ -5,7 +5,7 @@ function MyProject() {
     <div className="my-5 px-4">
       <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-6">
         {/* CareerBoost AI */}
-        <div className="bg-zinc-950 p-4 rounded-lg">
+        <div className="bg-zinc-950 p-5 rounded-lg">
           <div
             className="w-full h-48 md:h-56 lg:h-64 bg-white rounded-lg overflow-hidden mx-auto"
             style={{
@@ -26,7 +26,7 @@ function MyProject() {
         </div>
 
         {/* Zoom Clone */}
-        <div className="bg-zinc-950 p-4 rounded-lg">
+        <div className="bg-zinc-950 p-5 rounded-lg">
           <div
             className="w-full h-48 md:h-56 lg:h-64 bg-white rounded-lg overflow-hidden mx-auto"
             style={{
@@ -47,7 +47,7 @@ function MyProject() {
         </div>
 
         {/* CarConnect */}
-        <div className="bg-zinc-950 p-4 rounded-lg">
+        <div className="bg-zinc-950 p-5 rounded-lg">
           <div
             className="w-full h-48 md:h-56 lg:h-64 bg-white rounded-lg overflow-hidden mx-auto"
             style={{
