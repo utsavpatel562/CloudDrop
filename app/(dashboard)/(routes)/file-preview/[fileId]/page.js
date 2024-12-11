@@ -6,7 +6,7 @@ import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import FileInfo from './_components/FileInfo';
 import FileShareForm from './_components/FileShareForm';
-
+import { FaLongArrowAltLeft } from "react-icons/fa";
 function FilePreview({ params }) {
   const [fileId, setFileId] = useState(null); // State to store the unwrapped fileId
   const db = getFirestore(app);
@@ -50,8 +50,8 @@ function FilePreview({ params }) {
   return(
     <>
     <div className='py-10 px-20'>
-      <Link href={"/upload"} className='flex gap-3'>Go</Link>
-      <div className='grid grid-cols-1 md:grid-cols-2 mt-5'>
+      <Link href={"/upload"} className='flex items-center gap-2'><FaLongArrowAltLeft/>Go to Upload</Link>
+      <div className='grid grid-cols-1 md:justify-center md:grid-cols-2 mt-5'>
         <FileInfo file={file}/>
         <FileShareForm file={file} 
         onPasswordSave={(password)=>onPasswordSave(password)}
