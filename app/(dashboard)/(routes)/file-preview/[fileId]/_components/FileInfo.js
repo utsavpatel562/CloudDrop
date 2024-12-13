@@ -10,7 +10,7 @@ function FileInfo({file}) {
   },[file]);
   return file&&(
     <div className='text-center border flex justify-center m-4 flex-col items-center p-6 rounded-md border-slate-500 bg-zinc-900'>
-      <Image src={fileType=='image'?file?.fileUrl:'/file.png'} width={200} height={200} className='md:h-[200px] rounded-md object-contain'/>
+      <Image src={fileType=='image'?file?.fileUrl:'/file.png'} width={200} height={200} alt='UserImage' className='md:h-[200px] rounded-md object-contain'/>
     </div>
   )
 }

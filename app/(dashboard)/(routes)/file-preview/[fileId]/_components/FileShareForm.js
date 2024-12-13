@@ -10,8 +10,8 @@ function FileShareForm({file, onPasswordSave}) {
       <div>
         <label className='md:text-md text-zinc-300 font-semibold'>Short Url</label>
         <div className='flex gap-5 p-2 rounded-md justify-between mt-2 bg-zinc-900'>
-          <input type='text' value={file.shortUrl} disabled className='disabled:text-zinc-400 outline-none w-full bg-transparent'/> 
-          <MdContentCopy/>
+          <input type='text' value={file.shortUrl} disabled className='disabled:text-zinc-400 outline-none w-full bg-transparent md:pl-1'/> 
+          <MdContentCopy className='md:w-6 md:h-6'/>
         </div>
       </div>
       <div className='gap-3 flex mt-5'>
