@@ -41,7 +41,7 @@ function FileShareForm({ file, onPasswordSave }) {
               />
             </div>
             <button
-              className='flex items-center gap-1 p-2 md:pr-4 md:pl-4 bg-green-600 text-white rounded-md disabled:bg-transparent disabled:text-transparent hover:bg-green-500'
+              className='flex items-center gap-1 p-2 md:pr-4 md:pl-4 bg-green-600 text-white rounded-md disabled:bg-zinc-900 disabled:text-zinc-400 hover:bg-green-500'
               disabled={password?.length < 3}
               onClick={() => onPasswordSave(password)}
             >
