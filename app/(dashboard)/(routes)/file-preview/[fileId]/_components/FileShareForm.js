@@ -17,7 +17,7 @@ function FileShareForm({ file, onPasswordSave }) {
               disabled
               className='disabled:text-zinc-400 outline-none w-full bg-transparent md:p-1 md:pl-1'
             />
-            <MdContentCopy className='md:w-6 md:h-6' />
+            <MdContentCopy className='md:w-6 md:h-6 md:mt-1' />
           </div>
         </div>
         <div className='gap-3 flex mt-5'>
@@ -48,6 +48,20 @@ function FileShareForm({ file, onPasswordSave }) {
             </button>
           </div>
         ) : null}
+        <div className='bg-zinc-900 rounded-md p-2 md:mt-4'>
+          <div>
+            <label className='font-sans'>Send File to Email</label>
+            <div className='flex gap-5 p-1 rounded-md justify-between mt-2 bg-zinc-800'>
+            <input
+              type='value'
+              className='disabled:text-zinc-400 outline-none w-full bg-transparent md:p-1 md:pl-1'
+              placeholder='example@mail.com'
+            />
+            <MdContentCopy className='md:w-5 md:h-5 md:mt-1' />
+          </div>
+          <button className='bg-green-700 hover:bg-green-600 p-2 w-full rounded-md mt-3'>Send</button>
+          </div>
+        </div>
       </div>
     </>
   );
