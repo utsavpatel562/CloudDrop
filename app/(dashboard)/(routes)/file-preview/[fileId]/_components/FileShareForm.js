@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { MdContentCopy } from "react-icons/md";
 import { BiLock } from "react-icons/bi";
+import { MdMailOutline } from "react-icons/md";
+import { GrSend } from "react-icons/gr";
 function FileShareForm({ file, onPasswordSave }) {
   const [isPasswordEnable, setIsEnablePassword] = useState(false);
   const [password, setPassword] = useState('');
@@ -48,7 +50,7 @@ function FileShareForm({ file, onPasswordSave }) {
             </button>
           </div>
         ) : null}
-        <div className='bg-zinc-900 rounded-md p-2 md:mt-4'>
+        <div className='bg-zinc-900 rounded-md p-3 md:mt-4'>
           <div>
             <label className='font-sans'>Send File to Email</label>
             <div className='flex gap-5 p-1 rounded-md justify-between mt-2 bg-zinc-800'>
@@ -57,9 +59,9 @@ function FileShareForm({ file, onPasswordSave }) {
               className='disabled:text-zinc-400 outline-none w-full bg-transparent md:p-1 md:pl-1'
               placeholder='example@mail.com'
             />
-            <MdContentCopy className='md:w-5 md:h-5 md:mt-1' />
+            <MdMailOutline className='md:w-6 md:h-6 md:mt-1' />
           </div>
-          <button className='bg-green-700 hover:bg-green-600 p-2 w-full rounded-md mt-3'>Send</button>
+          <button className='flex items-center gap-2 justify-center bg-green-700 hover:bg-green-600 p-2 w-full rounded-md mt-3'>Send <GrSend/></button>
           </div>
         </div>
       </div>
