@@ -44,7 +44,7 @@ function FilePreview({ params }) {
     }
   };
   const onPasswordSave = (password) => {
-    
+    const docRef  = doc (db, "uploadedFile", params?.fileId)
   }
 
   return(
