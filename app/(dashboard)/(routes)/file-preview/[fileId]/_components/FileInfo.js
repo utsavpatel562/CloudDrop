@@ -27,7 +27,7 @@ function FileInfo({ file }) {
   return file && (
     <div className='text-center border flex justify-center m-4 flex-col items-center p-6 rounded-md border-slate-500 bg-zinc-900'>
       <Image 
-        src={fileType === 'image' ? file?.fileUrl : '/file.png'} 
+        src={fileType === 'image' ? file?.fileUrl : '/folder1.png'} 
         width={200} 
         height={200} 
         alt='UserImage' 
