@@ -1,7 +1,7 @@
 "use client";
 
 import { app } from '@/firebaseConfig';
-import { doc, getDoc, getFirestore } from 'firebase/firestore';
+import { doc, getDoc, getFirestore, updateDoc } from 'firebase/firestore';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import FileInfo from './_components/FileInfo';
@@ -43,8 +43,11 @@ function FilePreview({ params }) {
       console.error("Error fetching document:", error);
     }
   };
-  const onPasswordSave = (password) => {
-    const docRef  = doc (db, "uploadedFile", params?.fileId)
+  const onPasswordSave = async(password) => {
+    const docRef  = doc (db, "uploadedFile", params?.fileId);
+    await updateDoc(docRef, {
+      password: password
+    });
   }
 
   return(
