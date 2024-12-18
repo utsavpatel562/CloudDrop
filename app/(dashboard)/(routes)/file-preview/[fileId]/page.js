@@ -1,6 +1,6 @@
 "use client";
 
-import { app } from '@/firebaseConfig';
+import { app } from '/firebaseConfig';
 import { doc, getDoc, getFirestore, updateDoc } from 'firebase/firestore';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';

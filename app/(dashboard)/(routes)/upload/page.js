@@ -2,11 +2,11 @@
 import React, { useEffect, useState } from 'react'
 import UploadForm from './_components/UploadForm';
 import { doc, getFirestore, setDoc } from "firebase/firestore";
-import { app } from '@/firebaseConfig';
 import { getDownloadURL, getStorage, ref, uploadBytesResumable } from "firebase/storage";
 import { useUser } from '@clerk/nextjs';
-import { generateRandom } from '@/app/_utils/GenerateRandom';
+import { generateRandom } from '../../../_utils/GenerateRandom';
 import { useRouter } from 'next/navigation';
+import { app } from '/firebaseConfig';
 // dashboard upload 
 function Upload() {
   const {user} = useUser();

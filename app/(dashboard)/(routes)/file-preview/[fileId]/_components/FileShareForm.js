@@ -3,9 +3,18 @@ import { MdContentCopy } from "react-icons/md";
 import { BiLock } from "react-icons/bi";
 import { MdMailOutline } from "react-icons/md";
 import { GrSend } from "react-icons/gr";
+import GlobalApi from '../../../../../_utils/GlobalApi';
 function FileShareForm({ file, onPasswordSave }) {
   const [isPasswordEnable, setIsEnablePassword] = useState(false);
   const [password, setPassword] = useState('');
+  
+  // logic for Sending email  
+  const SendEmail = () => {
+    const data={}
+    GlobalApi.SendEmail(data).then(resp=> {
+      console.log(resp);
+    })
+  }
 
   return file && (
     <>
@@ -61,7 +70,7 @@ function FileShareForm({ file, onPasswordSave }) {
             />
             <MdMailOutline className='md:w-6 md:h-6 md:mt-1' />
           </div>
-          <button className='flex items-center gap-2 justify-center bg-green-700 hover:bg-green-600 p-2 w-full rounded-md mt-3'>Send <GrSend/></button>
+          <button onClick={()=> SendEmail()} className='flex items-center gap-2 justify-center bg-green-700 hover:bg-green-600 p-2 w-full rounded-md mt-3'>Send <GrSend/></button>
           </div>
         </div>
       </div>
