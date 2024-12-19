@@ -5,7 +5,7 @@ import { PiCodesandboxLogoFill } from "react-icons/pi";
 import { CgFileDocument } from "react-icons/cg";
 import { RiServiceLine } from "react-icons/ri";
 import { TbLogin2 } from "react-icons/tb";
-import { LuUserPlus2 } from "react-icons/lu";
+import { FaRegUser } from "react-icons/fa";
 import Image from 'next/image';
 import { MdFolderOpen } from "react-icons/md";
 import Link from 'next/link';
@@ -82,7 +82,7 @@ function Header() {
                     <div className="hidden sm:flex">
                       <Link href={"/sign-up"} className="flex gap-2 items-center rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-600 dark:bg-gray-800 dark:text-white dark:hover:text-white/75">
                         Register
-                        <LuUserPlus2 className='w-4 h-4' />
+                        <FaRegUser className='w-4 h-4' />
                       </Link>
                     </div>
                   </>
