@@ -1,3 +1,4 @@
+// Code by Utsav Patel
 import { EmailTemplate } from '../../_components/email-template';
 import { Resend } from 'resend';
 
