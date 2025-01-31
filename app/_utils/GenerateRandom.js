@@ -1,3 +1,4 @@
+// Code by Utsav Patel
 export const generateRandom = ()=>{
     const charaters= "ABCDEFGHIJKLMNOPURSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
     let result = "";
